@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'EsaManru';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EsaManru';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruMedium.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EsaManru';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/gonggames/EsaManruBold.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+.body_user,.body_user button,.body_user input,.body_user select,.body_user textarea,.body_user table {
+    font-family: "Pretendard Variable", 'Pretendard', 'Noto Sans KR','맑은 고딕','malgun gothic',sans-serif;
+	font-size: 16px;
+	word-break: keep-all;
+	word-wrap: break-word;
+	letter-spacing: -0.05em;
+}
+
+/* 사용자 공통변수 */
+:root {
+    --point-color1: #ED2452;
+    --point-color2: #F9FEFF;
+    --point-color3: #F85C83;
+    --point-color4: var(--admin-color5);
+}
+
+#wrap{width:100%; text-align:left; min-width:360px;}
+#container .root_daum_roughmap_landing{border-radius: 0; padding:0; border:0}
+
+/* placeholder color */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: #999; font-size: 16px; font-weight: 400; transition: all .2s;}/* WebKit, Blink, Edge */
+input:-moz-placeholder, textarea:-moz-placeholder {color: #999; font-size: 16px; font-weight: 400; opacity: 1; transition: all .2s;} /* Firefox 4 to 18 */
+input::-moz-placeholder, textarea::-moz-placeholder {color: #999; font-size: 16px; font-weight: 400; opacity: 1; transition: all .2s;} /* Firefox 19+ */
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color: #999 !important; font-size: 16px !important; font-weight: 400 !important; transition: all .2s !important;} /* Internet Explorer 10-11 */
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {color: #999; font-size: 16px; font-weight: 400; transition: all .2s;} /* Microsoft Edge */
+input::placeholder, textarea::placeholder {color: #999; font-size: 16px; font-weight: 400; transition: all .2s;} /* Most modern browsers support this now */
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {color: #222; font-size: 16px; font-weight: 400;}/* WebKit, Blink, Edge */
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder {color: #222; font-size: 16px; font-weight: 400; opacity: 1;} /* Firefox 4 to 18 */
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {color: #222; font-size: 16px; font-weight: 400; opacity: 1;} /* Firefox 19+ */
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {color: #222 !important; font-size: 16px !important; font-weight: 400 !important;} /* Internet Explorer 10-11 */
+input:focus::-ms-input-placeholder, textarea:focus::-ms-input-placeholder {color: #222; font-size: 16px; font-weight: 400;} /* Microsoft Edge */
+input:focus::placeholder, textarea:focus::placeholder {color: #222; font-size: 16px; font-weight: 400;} /* Most modern browsers support this now */
+
+
+/************************* 공통 *****************************/
+
+body,button,input,select,textarea,table {
+	font-family: 'Noto Sans KR','맑은 고딕','malgun gothic',sans-serif;
+	font-size: 16px;
+	word-break: keep-all;
+	word-wrap: break-word;
+	letter-spacing: -0.05em;
+}
+
+/* 인풋 스타일 */
+.input_box {position: relative; text-align: left;}
+.input_box input {width: 100%; height: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 0 24px; color: #222; font-size: 16px; position: relative; z-index: 2; height: 54px; transition: all .3s;}
+.input_box input:focus {border-color: var(--point-color1);}
+.input_box .btn_pw_view {position: absolute; right: 24px; z-index: 5; top: 50%; text-indent: -9999px; transform: translateY(-50%); width: 24px; height: 24px; background: #fff url('../images/ic_pw01.svg') no-repeat 50% 50%/100%; transition: all .2s;}
+.input_box input[type="password"] + .btn_pw_view {background: #fff url('../images/ic_pw02.svg') no-repeat 50% 50%/100%;}
+.input_box input:disabled {background: #f6f6f6; border-color: #f6f6f6; color: #222;}
+
+
+/* 체크박스 스타일 */
+.chk_box1 {display: inline-block; vertical-align: top; position: relative;}
+.chk_box1 input[type="checkbox"] + label {padding-left: 32px; font-size: 15px; font-weight: 500; color: #666; position: relative; line-height: 32px; display: block; cursor: pointer;}
+.chk_box1 input[type="checkbox"] + label:before {content: ''; position: absolute; left: 0; top: 50%; width: 24px; height: 24px; border: 1px solid #ddd; background: transparent; box-sizing: border-box; border-radius: 100%; transition: all .2s; transform: translateY(-50%);}
+.chk_box1 input[type="checkbox"] + label:after {content: ''; position: absolute; left: 5px; top: 50%; width: 14px; height: 11px; background: url('../images/ic_chk01.svg') no-repeat 50% 50%/100%; box-sizing: border-box; filter: brightness(1); transition: all .2s; transform: translateY(-50%);}
+.chk_box1 input[type="checkbox"]:checked + label:before {border-color: var(--point-color1); background: var(--point-color1);}
+.chk_box1 input[type="checkbox"]:checked + label:after {background-image: url('../images/ic_chk02.svg');}
+.chk_box2 {display: inline-block; vertical-align: top; position: relative; text-align: left;}
+.chk_box2 input[type="checkbox"] + label {text-indent: -9999px; cursor: pointer; display: block; width: 24px; height: 24px; border-radius: 4px; position: relative;}
+.chk_box2 input[type="checkbox"] + label:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border-radius: 4px; border: 1px solid #ddd; box-sizing: border-box; background: #fff; transition: all .2s;}
+.chk_box2 input[type="checkbox"] + label:after {content: ''; position: absolute; left: 5px; top: 50%; width: 14px; height: 11px; background: url('../images/ic_chk01.svg') no-repeat 50% 50%/100%; box-sizing: border-box; filter: brightness(1); transition: all .2s; transform: translateY(-50%);}
+.chk_box2 input[type="checkbox"]:checked + label:before {border-color: var(--point-color1); background: var(--point-color1);}
+.chk_box2 input[type="checkbox"]:checked + label:after {background-image: url('../images/ic_chk02.svg');}
+
+/* 스위치 */
+.btn_switch {display: inline-block; vertical-align: top; position: relative; width: 60px;}
+.btn_switch input[type="checkbox"] + label {width: 100%; position: relative; display: block; text-indent: -9999px; border-radius: 20px; background: #ddd; height: 28px; cursor: pointer; transition: all .3s;}
+.btn_switch input[type="checkbox"] + label:before {content: 'OFF'; position: absolute; left: 0; top: 0; font-size: 14px; font-weight: 500; color: #fff; text-indent: 2px; line-height: 28px; width: 100%; padding: 0 4px; transition: all .3s;}
+.btn_switch input[type="checkbox"] + label:after {content:''; position:absolute; top: 4px; right: 4px; width: 20px; height: 20px; transform: translateX(0); background: #fff; border-radius: 100%; transition: all .3s; box-shadow: 0 0 4px 0 rgba(144, 28, 38, 0.2);}
+.btn_switch input[type="checkbox"]:checked + label {background: var(--point-color1);}
+.btn_switch input[type="checkbox"]:checked + label:after {transform: translateX(-32px);}
+.btn_switch input[type="checkbox"]:checked + label:before {content: 'On'; text-indent: 24px;}
+
+
+
+/* select 스타일 */
+.select_style1 {width: 100%; position: relative;}
+.select_style1 select {width: 100%; display: block; padding: 0 24px; font-size: 16px; color: #999; background: none; border: 1px solid #ddd; border-radius: 8px; height: 54px; position: relative; z-index: 1; transition: all .3s;}
+.select_style1:after {content: ''; position: absolute; right: 24px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; background: url('../images/ic_arrow09.svg') no-repeat 50% 50%/100%;}
+.select_style1 select:focus {border-color: var(--point-color1);}
+
+
+/* 버튼 스타일 */
+.btn_style1 {display: inline-block; vertical-align: top; border-radius: 8px; border: 1px solid var(--point-color1); background: var(--point-color1); text-align: center; font-size: 18px; font-weight: 500; color: #fff; line-height: 28px; padding: 15px 0; cursor: pointer;}
+
+/* textarea */
+.textarea_box {border: none;}
+.textarea_box textarea {height: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 15px 24px; transition: all .3s;}
+.textarea_box textarea:focus {border-color: var(--point-color1);}
+
+
+
+
+.section_inner {position: relative; width: 100%; z-index: 2;}
+
+
+
+
+/* 메인 */
+.main_content .section0 {height: 100vh; position: relative; overflow: hidden;}
+.main_content .section0:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: url('../images/bg_main1.png') no-repeat 50% 50%/cover;}
+.main_content .section0 .section_inner {height: 100%;}
+.main_content .section0 .section_con {padding: 80px 0; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.main_content .section0 .section_con img {display: block;}
+.main_content .section0 .section_con .logo_wrap {padding-bottom: 60px;}
+.main_content .section0 .logo_wrap .logo img {margin: 0 auto; display: block;}
+.main_content .section0 .logo_wrap strong {display: block; padding-top: 28px;}
+.main_content .section0 .logo_wrap .txt {display: flex; align-items: center; justify-content: center; gap: 0 16px; padding-top: 16px;}
+.main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 700; color: #fff;}
+.main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 500; color: #fff;}
+.main_content .section0 .video_wrap {height: 520px; width: 920px; position: relative;}
+.main_content .section0 .video_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 128px; height: 128px; transform: rotateZ(45deg) translateX(-90px); background: transparent; border-right: 1px solid #C63270; box-sizing: border-box; z-index: 2;}
+.main_content .section0 .video_wrap:after {content: ''; position: absolute; right: 0; bottom: 0; width: 128px; height: 128px; transform: rotateZ(45deg) translateX(90px); background: transparent; border-left: 1px solid #C63270; box-sizing: border-box; z-index: 2;}
+.main_content .section0 .video_wrap .video {height: 100%; position: relative; /*clip-path: polygon(9% 0%, 100% 0, 100% 82%, 91% 100%, 0 100%, 0% 18%);*/ clip-path: polygon(90px 0%, 100% 0, 100% 430px, 830px 100%, 0 100%, 0% 90px); overflow: hidden;}
+.main_content .section0 .video_wrap .video:after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 1px solid #C63270; box-sizing: border-box;}
+.main_content .section0 .video_wrap video {width: 100%; height: 100%; object-fit: cover;}
+.main_content .video_wrap .btn_video_play {text-indent: -9999px; position: absolute; left: 50%; top: 50%; width: 140px; height: 140px; z-index: 10; transform: translate(-50%, -50%);}
+.main_content .video_wrap .video .btn_video_play:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/btn_play.png') no-repeat 50% 50%/100%; transform: translateY(50%); opacity: 0; transition: all .5s;}
+.main_content .video_wrap .video.video_playing .btn_video_play:before {background-image: url('../images/btn_pause.png');}
+.main_content .video_wrap .video:hover .btn_video_play:before {transform: translateY(0); opacity: 1;}
+.main_content .section0 .banner {position: absolute; left: 0; bottom: 0; width: 100%; display: flex; justify-content: center; align-items: center; z-index: 2; height: 80px; background: #ED0773;}
+.main_content .section0 .banner strong {text-align: center; position: relative; padding: 0 63px;}
+.main_content .section0 .banner strong:before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 23px; height: 14px; background: url('../images/arrow_1.svg') no-repeat 50% 50%/auto 100%;}
+.main_content .section0 .banner strong:after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 23px; height: 14px; background: url('../images/arrow_1.svg') no-repeat 50% 50%/auto 100%;}
+.main_content .section0 .banner strong b {display: block; font-size: 22px; font-weight: 700; color: #fff; font-family: 'EsaManru'; padding: 0 63px; position: relative;}
+.main_content .section0 .banner strong b:before {content: ''; position: absolute; left: 0; top: 50%; width: 23px; height: 34px; background: url('../images/arrow_2.svg') no-repeat 50% 50%/auto 100%; transform: translateY(-50%);}
+.main_content .section0 .banner strong b:after {content: ''; position: absolute; right: 0; top: 50%; width: 23px; height: 34px; background: url('../images/arrow_2.svg') no-repeat 50% 50%/auto 100%; transform: translateY(-50%);}
+
+
+
+
+
+
+
+
+
+
+
+/********************************** 태블릿 **********************************/
+@media screen and (max-width: 1317px){
+
+
+
+
+}
+
+
+/********************************** 모바일 **********************************/
+@media screen and (max-width: 768px){
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
