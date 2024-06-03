@@ -136,7 +136,9 @@ body,button,input,select,textarea,table {
 
 
 .section_inner {position: relative; width: 100%; z-index: 2;}
-
+.main_content .section_inner {position: relative; max-width: 1400px; width: 100%; margin: 0 auto;}
+.pc_img {display: block;}
+.m_img {display: none;}
 
 
 
@@ -171,7 +173,26 @@ body,button,input,select,textarea,table {
 .main_content .section0 .banner strong b:after {content: ''; position: absolute; right: 0; top: 50%; width: 23px; height: 34px; background: url('../images/arrow_2.svg') no-repeat 50% 50%/auto 100%; transform: translateY(-50%);}
 
 
+.main_content .section_wrap {position: relative;}
+.main_content .section_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: url('../images/bg_main2.png') no-repeat 50% 50%/cover;}
 
+.main_content .img_box img {width: 100%;}
+.main_content .tit {padding: 220px 0 160px; display: flex; justify-content: space-between; align-items: flex-end;}
+.main_content .tit .btn_box {position: relative; width: 280px; height: 280px; border-radius: 100%; background: linear-gradient(92.95deg, #DE548E 0%, #C63270 99.49%);}
+.main_content .tit .btn_box:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; box-sizing: border-box; border-radius: 100%; box-shadow: 0px 0px 250px 0px #EC609B; box-shadow: 0px 0px 20px 0px #EC609B; opacity: 0; transition: all .5s;}
+.main_content .tit .btn_box a {display: block; width: 100%; height: 100%; position: relative;}
+.main_content .tit .btn_box span {position: absolute; left: 0; bottom: 70px; width: 100%; text-align: center; overflow: hidden;}
+.main_content .tit .btn_box a:before {content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 70px; width: 60px; height: 60px; background: url('../images/arrow_3.svg') no-repeat 0 0/100%; transition: all .5s;}
+.main_content .tit .btn_box a:after {content: '';position: absolute;left: 50%; transform: translateX(-50%);top: 70px;width: 60px;height: 60px;background: url('../images/arrow_3.svg') no-repeat 0 60px/100%; transition: all .5s;}
+.main_content .tit .btn_box:hover a:before {background-position-y: -60px;}
+.main_content .tit .btn_box:hover a:after {background-position-y: 0;}
+.main_content .tit .btn_box:hover:before {opacity: 1;}
+.main_content .tit .btn_box em {display: block; text-align: center; overflow: hidden;}
+.main_content .tit .btn_box em i {display: block; transform: translateY(100%); transition: all .5s; line-height: 40px; font-size: 28px; font-weight: 700; color: #fff; letter-spacing: -0.05em;}
+.main_content .tit .btn_box em i b {font-size: 32px; display: block;}
+.main_content .tit .btn_box span:first-of-type em i {transform: translateY(0); font-size: 20px; font-weight: 500;}
+.main_content .tit .btn_box:hover em i {transform: translateY(0);}
+.main_content .tit .btn_box:hover span:first-of-type em i {transform: translateY(-100%);}
 
 
 
