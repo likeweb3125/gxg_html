@@ -24,26 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-
-
-
-    // 스크롤이벤트
-    window.addEventListener("scroll", () => {
-        // const winScroll = this.scrollY;
-        // winScroll > 0 ? headerEl.classList.add("active") : headerEl.classList.remove("active");
-
+    // FAQ
+    const faqLink = document.querySelectorAll('.list_faq .q_con a');
+    faqLink.forEach(el => {
+        el.addEventListener('click', (e) => {
+            let liEl = e.target.closest('li');
+            liEl.classList.toggle('on')
+        });
     });
-    window.dispatchEvent(new Event("scroll"));
-
-    // 리사이즈 이벤트
-    window.addEventListener("resize", () => {
-        // const headerHeight = headerEl.clientHeight;
-        // const conWrap = document.querySelector(".content_wrap");
-        // conWrap.style.paddingTop = `${headerHeight}px`;
-    });
-    window.dispatchEvent(new Event("resize"));
+    
+    
 
 
+
+
+
+
+
+    
 
 
 

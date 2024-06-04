@@ -4,12 +4,90 @@
 
 
 /* 서브 공통 */
+.sub_content {background: #F1F4F9; padding-top: 80px;}
 .sub_content .section_inner {position: relative; max-width: 1400px; width: 100%; margin: 0 auto;}
 button {background: none; border: none; margin: 0; padding: 0; border-radius: 0; cursor: pointer;}
 
 
+.sub_tit {position: relative; padding: 96px 0 60px;}
+.sub_tit:before {content: ''; position: absolute; right: 0; top: 0; width: 600px; aspect-ratio: 60 / 32; background: url('../images/community_img.png') no-repeat 50% 50%/100%;}
+.sub_tit h2 {font-size: 40px; font-weight: 700; color: #000; position: relative; padding-left: 24px;}
+.sub_tit h2:before {content: ''; position: absolute; left: 0; top: 0; width: 16px; height: 16px; background: var(--point-color4);}
+.sub_tit span {display: block; padding-top: 20px; font-size: 20px; font-weight: 400; color: #000;}
 
 
+/* 탭 */
+.tab_style1 {display: flex; gap: 0 60px; position: relative;}
+.tab_style1:before {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: #ddd;}
+.tab_style1 li a {display: block; font-size: 24px; font-weight: 700; color: #999; position: relative; line-height: 28px; padding: 5px 0 13px;}
+.tab_style1 li a:after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background: var(--point-color4); opacity: 0;}
+.tab_style1 li.on a {color: var(--point-color4);}
+.tab_style1 li.on a:after {opacity: 1;}
+
+
+/* 페이징 */
+.paging {text-align: center; position: relative; padding: 40px 0 20px; display: flex; justify-content: center;}
+.paging a {width: 32px; height: 32px; line-height: 30px; border: 1px solid transparent; display: inline-block; vertical-align: top; margin: 0 6px; font-size: 18px; font-weight: 500; color: #222;}
+.paging strong {width: 32px; height: 32px; line-height: 30px; border: 1px solid transparent; display: inline-block; vertical-align: top; margin: 0 6px; border-radius: 4px; background: #ED2452; font-size: 18px; font-weight: 500; color: #fff;}
+.paging .btn_paging {text-indent: -9999px; text-align: left; position: relative;}
+.paging .btn_paging:after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/ic_paging_arrow1.svg') no-repeat 50% 50%/auto 14px;}
+.paging .btn_paging.btn_first, .paging .btn_paging.btn_prev, .paging .btn_paging.btn_next, .paging .btn_paging.btn_last {width: 26px;}
+.paging .btn_paging.btn_first, .paging .btn_paging.btn_last {margin: 0;}
+.paging .btn_paging.btn_first:after, .paging .btn_paging.btn_last:after {margin: 0; background-image: url('../images/ic_paging_arrow2.svg');}
+.paging .btn_paging.btn_prev {margin: 0 10px 0 0;}
+.paging .btn_paging.btn_next {margin: 0 0 0 10px;}
+.paging .btn_paging.btn_next:after {transform: rotateZ(180deg);}
+.paging .btn_paging.btn_last:after {transform: rotateZ(180deg);}
+
+
+.user_baord {padding-bottom: 160px;}
+.user_baord .board_area {margin-top: 20px; background: #fff; border-radius: 40px; padding: 40px 60px;}
+.board_table {border-top: 1px solid #000; border-bottom: 1px solid #ddd;}
+.board_table td {padding: 25px 0; border-bottom: 1px solid #ddd;}
+.board_table .date_tdbox {display: flex; flex-direction: column-reverse; align-items: center;}
+.board_table .date_tdbox b {font-size: 28px; font-weight: 700; color: #000;}
+.board_table .date_tdbox em {font-size: 16px; font-weight: 600; color: #000;}
+.board_table .name_td {text-align: center; font-size: 16px; font-weight: 500; color: #000;}
+.board_table .con_tdbox {display: flex; align-items: flex-start; gap: 0 16px; padding: 0 30px;}
+.board_table .con_tdbox strong {line-height: 30px; text-align: center; flex: 0 0 60px; font-size: 16px; font-weight: 700; color: #fff; background: var(--point-color4); border-radius: 20px;}
+.board_table .con_tdbox span {flex: 1; line-height: 30px; font-size: 18px; font-weight: 400; color: #000; display: block; max-width: calc(100% - 100px);}
+.board_table .con_tdbox span a {display: block; font-size: inherit; font-weight: inherit; color: inherit; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+
+/* 게시판 뷰 */
+.board_view .board_tit_box {border-bottom: 1px solid #ddd; padding: 30px 20px; position: relative; padding-right: 130px;}
+.board_view .board_tit_box .btn_util {position: absolute; right: 20px; top: 50%; transform: translateY(-50%); display: flex; column-gap: 4px;}
+.board_view .board_tit h5 {padding-bottom: 15px; font-size: 28px; font-weight: 500; color: #222;}
+.board_view .board_tit .board_info {display: flex; align-items: center;}
+.board_view .board_tit .board_info li {position: relative; padding-right: 16px; margin-right: 16px; font-size: 18px; color: #999;}
+.board_view .board_tit .board_info li:after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 16px; background: #ddd;}
+.board_view .board_tit .board_info li:last-of-type {margin-right: 0; padding-right: 0;}
+.board_view .board_tit .board_info li:last-of-type:after {display: none;}
+.board_view .board_tit .board_info strong {display: block; font-size: inherit; font-weight: inherit; color: inherit;}
+.board_view .board_tit .board_info em {display: block; font-size: 16px; font-weight: inherit; color: inherit;}
+.board_view .board_tit .board_info span {display: block; font-size: inherit; font-weight: inherit; color: inherit;}
+.board_view .board_tit .board_info .view_cnt {padding-left: 30px; position: relative; font-size: 18px;}
+.board_view .board_tit .board_info .view_cnt:before {content: ''; width: 24px; height: 24px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: url('../images/ic_view_cnt.svg') no-repeat 50% 50%/100%;}
+.board_view .board_tit_box .btn_tit_util {position: absolute; right: 20px; top: 30px; display: flex; gap: 0 12px;}
+.board_view .board_tit_box .btn_tit_util a {width: 28px; height: 28px; text-indent: -9999px;}
+.board_view .board_tit_box .btn_tit_util a.btn_1 {background: url('../images/ic_btn1.svg') no-repeat 50% 50%/100%;}
+.board_view .board_tit_box .btn_tit_util a.btn_2 {background: url('../images/ic_btn2.svg') no-repeat 50% 50%/100%;}
+.board_view .board_con {padding: 30px 24px; font-size: 18px; font-weight: 400; color: #666;}
+.board_view .board_con img {display: block !important; width: 100% !important; height: auto !important;}
+.user_baord .btn_center_wrap {text-align: center; padding: 30px 0 20px; border-top: 1px solid #222;}
+
+
+
+/* FAQ */
+.list_faq {border-top: 1px solid #000;}
+.list_faq li {border-bottom: 1px solid #ddd;}
+.list_faq .q_con {position: relative;}
+.list_faq .q_con:before {content: 'Q'; position: absolute; left: 55px; top: 50%; font-size: 36px; font-weight: 500; transform: translateY(-50%); color: var(--point-color1); transition: all .3s; z-index: 1; line-height: 22px;}
+.list_faq .q_con a {display: block; padding: 30px 90px 30px 150px; font-size: 18px; font-weight: 500; color: #000; position: relative; line-height: 30px; transition: all .3s;}
+.list_faq .q_con a:after {content: ''; position: absolute; right: 20px; top: 50%; transform: translateY(-50%) rotateX(0); background: url('../images/faq_arrow1.svg') no-repeat 50% 100%/100%; width: 28px; height: 29px; transition: all .3s;}
+.list_faq .a_con {border-top: 1px solid transparent; background: #FAFAFD; overflow: hidden; padding: 0 90px 0 150px; height: 0; position: relative; font-size: 18px; color: #666; transition: all .5s, border .3s;}
+.list_faq li.on .q_con a:after {transform: translateY(-50%) rotateX(180deg);}
+.list_faq li.on .a_con {height: auto; padding: 25px 90px 25px 150px; border-top-color: #ddd;}
 
 
 
@@ -17,14 +95,83 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 
 /********************************** 태블릿 **********************************/
 @media screen and (max-width: 1317px){
-    
+    .tab_style1 {gap: 0 40px;}
+
+    .sub_tit {padding: 0 0 56px;}
+    .sub_tit:before {background-image: url('../images/community_img_tb.png'); width: 327px; right: 26px;}
+    .sub_content .section_inner {padding: 0 20px;}
+    .user_baord .board_area {padding: 40px;}
+    .board_table .name_col {display: none;}
+    .board_table .name_td {display: none;}
+
+
+
+    /* FAQ */
+    .list_faq .a_con {padding: 0 20px;}
+    .list_faq li.on .a_con {padding: 25px 20px;}
+
+
+
+
+
+
 }
 
 
 
 /********************************** 모바일 **********************************/
 @media screen and (max-width: 768px){
-  
+    /* 탭 */
+    .tab_style1 {position: relative; width: calc(100% + 20px); left: 50%; transform: translateX(-50%); padding: 0 20px; overflow: auto;}
+    .tab_style1 li a {font-size: 18px; padding-bottom: 8px;}
+
+
+
+    .sub_content {padding-top: 40px;}
+    .sub_content .section_inner {padding: 0 10px;}
+    .sub_tit {padding-bottom: 36px;}
+    .sub_tit:before {display: none;}
+    .sub_tit h2 {padding-left: 20px; font-size: 24px;}
+    .sub_tit h2:before {width: 12px; height: 12px;}
+    .sub_tit span {padding-top: 0; font-size: 18px;}
+
+    /* 페이징 */
+    .paging a {font-size: 14px; margin: 0; width: 24px; height: 24px; line-height: 22px;}
+    .paging strong {font-size: 14px; margin: 0; width: 24px; height: 24px; line-height: 22px;}
+    .paging .btn_paging.btn_prev {margin: 0 5px 0 0;}
+    .paging .btn_paging.btn_next {margin: 0 0 0 5px;}
+    .paging .btn_paging.btn_first, .paging .btn_paging.btn_last {display: none;}
+
+    .user_baord {padding-bottom: 100px;}
+    .user_baord .board_area {padding: 20px; border-radius: 20px;}
+    .board_table table {display: block;}
+    .board_table tbody {display: block;}
+    .board_table tr {display: block; border-bottom: 1px solid #ddd; padding: 15px 0;}
+    .board_table td {display: block; padding: 0; border: none;}
+    .board_table .date_tdbox {flex-direction: row; font-size: 14px; font-weight: 600; color: #000; padding-bottom: 8px;}
+    .board_table .date_tdbox em {font-size: inherit; font-weight: inherit; color: inherit;}
+    .board_table .date_tdbox b {font-size: inherit; font-weight: inherit; color: inherit;}
+    .board_table .date_tdbox b:before {content: '.';}
+    .board_table .con_tdbox {padding: 0; gap: 0 8px;}
+    .board_table .con_tdbox strong {font-size: 14px; flex: 0 0 50px; line-height: 24px;}
+    .board_table .con_tdbox span {max-width: calc(100% - 60px); line-height: 24px;}
+    .board_view .board_tit_box {padding: 30px 0 20px;}
+    .board_view .board_tit_box .btn_tit_util {right: 0; top: 0;}
+    .board_view .board_tit_box .btn_tit_util a {width: 20px; height: 20px;}
+    .board_view .board_tit h5 {padding-bottom: 10px; font-size: 20px;}
+    .board_view .board_tit .board_info li {font-size: 16px;}
+    .board_view .board_tit .board_info em {font-size: 14px;}
+    .board_view .board_con {padding: 30px 0; font-size: 16px;}
+    .user_baord .btn_center_wrap {padding: 20px 0;}
+
+
+    /* FAQ */
+    .list_faq .q_con:before {font-size: 28px; left: 0; top: 20px; transform: none;}
+    .list_faq .q_con a {padding: 55px 30px 15px 0;}
+    .list_faq .q_con a:after {right: 0;}
+    .list_faq .a_con {padding: 0 10px; font-size: 16px;}
+    .list_faq li.on .a_con {padding: 15px 10px;}
+
 }
 
 
