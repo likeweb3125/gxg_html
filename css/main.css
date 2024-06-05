@@ -166,9 +166,10 @@ body,button,input,select,textarea,table {
 .main_content .section0 .section_con .logo_wrap {padding-bottom: 40px;}
 .main_content .section0 .logo_wrap .logo img {margin: 0 auto; display: block;}
 .main_content .section0 .logo_wrap strong {display: block; padding-top: 28px; font-size: 56px; font-weight: 300; color: #fff; text-align: center; font-family: 'EsaManru';}
-.main_content .section0 .logo_wrap .txt {display: flex; align-items: center; justify-content: center; gap: 0 16px; padding-top: 16px;}
-.main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 700; color: #fff;}
-.main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 500; color: #fff;}
+.main_content .section0 .logo_wrap .txt {display: flex; align-items: center; justify-content: center; gap: 0 16px; padding-top: 16px; font-family: 'EsaManru';}
+.main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 300; color: #fff; display: flex; gap: 0 8px; align-items: center;}
+.main_content .section0 .logo_wrap .txt b i {line-height: 26px; padding: 0 12px; text-align: center; border-radius: 20px; background: #fff; font-size: 16px; font-weight: 300; color: #000;}
+.main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 300; color: #fff;}
 .main_content .section0 .video_wrap {max-width: 920px; position: relative; aspect-ratio: 920 / 520;}
 .main_content .section0 .video_wrap:before {z-index: -1; content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50.2%); width: calc(100% + 3px); height: calc(100% + 3px); clip-path: polygon(90px 0%, 100% 0, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0 100%, 0% 90px); background: #C63270;}
 /* .main_content .section0 .video_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 127px; height: 127px; transform: rotateZ(45deg) translateX(-90px); background: transparent; border-right: 1px solid #C63270; z-index: 2;}
