@@ -201,8 +201,9 @@ body,button,input,select,textarea,table {
 .main_content .tit .btn_box:hover a:before {background-position-y: -60px;}
 .main_content .tit .btn_box:hover a:after {background-position-y: 0;}
 .main_content .tit .btn_box:hover:before {opacity: 1;}
-.main_content .tit .btn_box em {display: block; text-align: center; overflow: hidden;}
-.main_content .tit .btn_box em i {display: block; transform: translateY(100%); transition: all .5s; line-height: 40px; font-size: 30px; font-weight: 700; color: #fff; letter-spacing: -0.05em;}
+.main_content .tit .btn_box em {display: block; text-align: center; overflow: hidden; margin-top: 4px;}
+.main_content .tit .btn_box em:first-of-type {margin-top: 0;}
+.main_content .tit .btn_box em i {display: block; transform: translateY(105%); transition: all .5s; line-height: 40px; font-size: 30px; font-weight: 700; color: #fff; letter-spacing: -0.05em;}
 .main_content .tit .btn_box em i b {font-size: 32px; display: block;}
 .main_content .tit .btn_box span:first-of-type em i {transform: translateY(0); font-size: 24px; font-weight: 500;}
 .main_content .tit .btn_box:hover em i {transform: translateY(0);}
