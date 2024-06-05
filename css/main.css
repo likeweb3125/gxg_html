@@ -170,8 +170,8 @@ body,button,input,select,textarea,table {
 .main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 700; color: #fff;}
 .main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 500; color: #fff;}
 .main_content .section0 .video_wrap {max-width: 920px; position: relative; aspect-ratio: 920 / 520;}
-.main_content .section0 .video_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 126px; height: 126px; transform: rotateZ(45deg) translateX(-90px); background: transparent; border-right: 1px solid #C63270; z-index: 2;}
-.main_content .section0 .video_wrap:after {content: ''; position: absolute; right: 0; bottom: 0; width: 126px; height: 126px; transform: rotateZ(45deg) translateX(90px); background: transparent; border-left: 1px solid #C63270; z-index: 2;}
+.main_content .section0 .video_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 127px; height: 127px; transform: rotateZ(45deg) translateX(-90px); background: transparent; border-right: 1px solid #C63270; z-index: 2;}
+.main_content .section0 .video_wrap:after {content: ''; position: absolute; right: 0; bottom: 0; width: 127px; height: 127px; transform: rotateZ(45deg) translateX(90px); background: transparent; border-left: 1px solid #C63270; z-index: 2;}
 .main_content .section0 .video_wrap .video {height: 100%; position: relative; clip-path: polygon(90px 0%, 100% 0, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0 100%, 0% 90px); overflow: hidden;}
 .main_content .section0 .video_wrap .video:after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 1px solid #C63270; box-sizing: border-box;}
 .main_content .section0 .video_wrap video {width: 100%; height: 100%; object-fit: cover; display: block;}
