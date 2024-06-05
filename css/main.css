@@ -267,7 +267,7 @@ body,button,input,select,textarea,table {
 
     .main_content .section0 {padding: 0 20px;}
     .main_content .section0:before {background-image: url('../images/bg_main1_tb.png');}
-    .main_content .section0 .section_con .logo_wrap {padding-bottom: 80px;}
+    .main_content .section0 .section_con .logo_wrap {padding-bottom: 50px;}
     /* .main_content .section0 .video_wrap {aspect-ratio: 718 / 411;} */
     .main_content .section0 .video_wrap:before {clip-path: polygon(70px 0%, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0% 70px);}
     .main_content .section0 .video_wrap .video {clip-path: polygon(70px 0%, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0% 70px);}
