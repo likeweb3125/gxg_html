@@ -5,7 +5,7 @@
 
 /* 서브 공통 */
 .sub_content {background: #F1F4F9; padding-top: 80px;}
-.sub_content .section_inner {position: relative; max-width: 1400px; width: 100%; margin: 0 auto;}
+.sub_content .section_inner {position: relative; max-width: 1200px; width: 100%; margin: 0 auto;}
 button {background: none; border: none; margin: 0; padding: 0; border-radius: 0; cursor: pointer;}
 
 

@@ -151,7 +151,7 @@ body,button,input,select,textarea,table {
 
 
 .section_inner {position: relative; width: 100%; z-index: 2;}
-.main_content .section_inner {position: relative; max-width: 1400px; width: 100%; margin: 0 auto;}
+.main_content .section_inner {position: relative; max-width: 1200px; width: 100%; margin: 0 auto;}
 .pc_img {display: block;}
 .tb_img {display: none;}
 .m_img {display: none;}
@@ -274,7 +274,8 @@ body,button,input,select,textarea,table {
     /* .main_content .section0 .video_wrap:before {width: 98px; height: 98px; transform: rotateZ(45deg) translateX(-70px);}
     .main_content .section0 .video_wrap:after {width: 98px; height: 98px; transform: rotateZ(45deg) translateX(70px);} */
     .main_content .section_wrap:before {background-image: url('../images/bg_main2_tb.png');}
-    .main_content .section1 .section_con {padding: 0 20px;}
+    /* .main_content .section1 .section_con {padding: 0 20px;} */
+    .main_content .section1 .section_con {padding: 0 40px;}
     .main_content .center_logo {padding-top: 40px;}
     .main_content .tit {padding: 170px 0 55px;}
     .main_content .tit .btn_box {display: none;}
@@ -330,7 +331,8 @@ body,button,input,select,textarea,table {
     .main_content .section0 .banner strong b:after {width: 12px;}
     .main_content .section_wrap:before {background-image: url('../images/bg_main2_m.png');}
     .main_content .center_logo {display: none;}
-    .main_content .section1 .section_con {padding: 0 16px;}
+    /* .main_content .section1 .section_con {padding: 0 16px;} */
+    .main_content .section1 .section_con {padding: 0 28px;}
     .main_content .tit {padding: 170px 0 60px;}
     .main_content .btn_wrap {padding: 40px 0 120px; flex-direction: column-reverse; align-items: center;}
     #footer .footer_inner {padding: 0 16px;}
