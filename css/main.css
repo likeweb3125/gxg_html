@@ -191,7 +191,7 @@ body,button,input,select,textarea,table {
 .main_content .section_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: url('../images/bg_main2.png') no-repeat 50% 0%/cover;}
 .main_content .img_box img {width: 100%;}
 .main_content .center_logo {display: block; padding-top: 100px;}
-.main_content .tit {padding: 490px 0 100px; display: flex; justify-content: space-between; align-items: flex-end;}
+.main_content .tit {padding: 240px 0 100px; display: flex; justify-content: space-between; align-items: flex-end;}
 .main_content .tit .btn_box {position: relative; aspect-ratio: 1 / 1; height: 280px; border-radius: 100%; background: linear-gradient(92.95deg, #DE548E 0%, #C63270 99.49%);}
 .main_content .tit .btn_box:before {content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 20px); height: calc(100% + 20px); box-sizing: border-box; border-radius: 100%; box-shadow: 0px 0px 20px 0px #EC609B, 0px 0px 250px 0px #EC609B; opacity: 0; transition: all .5s;}
 .main_content .tit .btn_box a {display: block; width: 100%; height: 100%; position: relative;}
