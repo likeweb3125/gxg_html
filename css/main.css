@@ -157,6 +157,9 @@ body,button,input,select,textarea,table {
 .m_img {display: none;}
 
 
+/* 수정 */
+.main_content .section0 {height: 100vh !important;}
+.main_content .section0 .section_con {padding: 60px 0 80px !important;}
 
 /* 메인 */
 .main_content .section0 {position: relative; overflow: hidden; display: block;}
