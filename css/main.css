@@ -153,6 +153,7 @@ body,button,input,select,textarea,table {
 .section_inner {position: relative; width: 100%; z-index: 2;}
 .main_content .section_inner {position: relative; max-width: 1400px; width: 100%; margin: 0 auto;}
 .pc_img {display: block;}
+.tb_img {display: none;}
 .m_img {display: none;}
 
 
@@ -256,6 +257,11 @@ body,button,input,select,textarea,table {
 
 /********************************** 태블릿 **********************************/
 @media screen and (max-width: 1317px){
+    .pc_img {display: none;}
+    .tb_img {display: block;}
+    .m_img {display: none;}
+
+
     .main_content .section0 {padding: 0 20px;}
     .main_content .section0:before {background-image: url('../images/bg_main1_tb.png');}
     .main_content .section0 .section_con .logo_wrap {padding-bottom: 80px;}
@@ -295,6 +301,7 @@ body,button,input,select,textarea,table {
 
 
     .pc_img {display: none;}
+    .tb_img {display: none;}
     .m_img {display: block;}
     .main_content .section0 {padding: 0 16px;}
     .main_content .section0:before {background-image: url('../images/bg_main1_m.png');}
