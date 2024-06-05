@@ -170,11 +170,11 @@ body,button,input,select,textarea,table {
 .main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 700; color: #fff;}
 .main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 500; color: #fff;}
 .main_content .section0 .video_wrap {max-width: 920px; position: relative; aspect-ratio: 920 / 520;}
-.main_content .section0 .video_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 128px; height: 128px; transform: rotateZ(45deg) translateX(-90px); background: transparent; border-right: 1px solid #C63270; box-sizing: border-box; z-index: 2;}
-.main_content .section0 .video_wrap:after {content: ''; position: absolute; right: 0; bottom: 0; width: 128px; height: 128px; transform: rotateZ(45deg) translateX(90px); background: transparent; border-left: 1px solid #C63270; box-sizing: border-box; z-index: 2;}
+.main_content .section0 .video_wrap:before {content: ''; position: absolute; left: 0; top: 0; width: 126px; height: 126px; transform: rotateZ(45deg) translateX(-90px); background: transparent; border-right: 1px solid #C63270; z-index: 2;}
+.main_content .section0 .video_wrap:after {content: ''; position: absolute; right: 0; bottom: 0; width: 126px; height: 126px; transform: rotateZ(45deg) translateX(90px); background: transparent; border-left: 1px solid #C63270; z-index: 2;}
 .main_content .section0 .video_wrap .video {height: 100%; position: relative; clip-path: polygon(90px 0%, 100% 0, 100% calc(100% - 90px), calc(100% - 90px) 100%, 0 100%, 0% 90px); overflow: hidden;}
 .main_content .section0 .video_wrap .video:after {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 1px solid #C63270; box-sizing: border-box;}
-.main_content .section0 .video_wrap video {width: 100%; height: 100%; object-fit: cover;}
+.main_content .section0 .video_wrap video {width: 100%; height: 100%; object-fit: cover; display: block;}
 .main_content .video_wrap .btn_video_play {text-indent: -9999px; position: absolute; left: 50%; top: 50%; width: 140px; height: 140px; z-index: 10; transform: translate(-50%, -50%);}
 .main_content .video_wrap .video .btn_video_play:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url('../images/btn_play.png') no-repeat 50% 50%/100%; transform: translateY(50%); opacity: 0; transition: all .5s;}
 .main_content .video_wrap .video.video_playing .btn_video_play:before {background-image: url('../images/btn_pause.png');}
@@ -257,10 +257,10 @@ body,button,input,select,textarea,table {
     .main_content .section0 {padding: 0 20px;}
     .main_content .section0:before {background-image: url('../images/bg_main1_tb.png');}
     .main_content .section0 .section_con .logo_wrap {padding-bottom: 80px;}
-    .main_content .section0 .video_wrap {aspect-ratio: 718 / 411;}
+    /* .main_content .section0 .video_wrap {aspect-ratio: 718 / 411;} */
     .main_content .section0 .video_wrap .video {clip-path: polygon(70px 0%, 100% 0, 100% calc(100% - 70px), calc(100% - 70px) 100%, 0 100%, 0% 70px);}
-    .main_content .section0 .video_wrap:before {width: 99px; height: 99px; transform: rotateZ(45deg) translateX(-70px);}
-    .main_content .section0 .video_wrap:after {width: 99px; height: 99px; transform: rotateZ(45deg) translateX(70px);}
+    .main_content .section0 .video_wrap:before {width: 98px; height: 98px; transform: rotateZ(45deg) translateX(-70px);}
+    .main_content .section0 .video_wrap:after {width: 98px; height: 98px; transform: rotateZ(45deg) translateX(70px);}
     .main_content .section_wrap:before {background-image: url('../images/bg_main2_tb.png');}
     .main_content .section1 .section_con {padding: 0 20px;}
     .main_content .center_logo {padding-top: 40px;}
@@ -303,8 +303,8 @@ body,button,input,select,textarea,table {
     .main_content .section0 .logo_wrap .txt b {display: block; font-size: 18px;}
     .main_content .section0 .logo_wrap .txt span {display: block; padding-top: 10px; font-size: 18px;}
     .main_content .section0 .video_wrap .video {clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);}
-    .main_content .section0 .video_wrap:before {width: 43px; height: 43px; transform: rotateZ(45deg) translateX(-30px);}
-    .main_content .section0 .video_wrap:after {width: 43px; height: 43px; transform: rotateZ(45deg) translateX(30px);}
+    .main_content .section0 .video_wrap:before {width: 42px; height: 42px; transform: rotateZ(45deg) translateX(-30px);}
+    .main_content .section0 .video_wrap:after {width: 42px; height: 42px; transform: rotateZ(45deg) translateX(30px);}
     .main_content .video_wrap .btn_video_play {width: 100px; height: 100px;}
     .main_content .video_wrap .video.video_playing .btn_video_play:before {opacity: 0;}
     .main_content .section0 .banner br {display: block;}
