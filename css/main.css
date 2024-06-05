@@ -304,6 +304,7 @@ body,button,input,select,textarea,table {
     .main_content .section0 .video_wrap:before {width: 43px; height: 43px; transform: rotateZ(45deg) translateX(-30px);}
     .main_content .section0 .video_wrap:after {width: 43px; height: 43px; transform: rotateZ(45deg) translateX(30px);}
     .main_content .video_wrap .btn_video_play {width: 100px; height: 100px;}
+    .main_content .video_wrap .video.video_playing .btn_video_play:before {opacity: 0;}
     .main_content .section0 .banner br {display: block;}
     .main_content .section0 .banner strong {padding: 0 18px; flex: 1;}
     .main_content .section0 .banner strong:before {display: none;}
