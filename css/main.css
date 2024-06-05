@@ -159,18 +159,17 @@ body,button,input,select,textarea,table {
 
 /* 수정 */
 .main_content .section0 {height: 100vh !important;}
-.main_content .section0 .section_con {padding: 60px 0 80px !important;}
 
 /* 메인 */
 .main_content .section0 {position: relative; overflow: hidden; display: block;}
 .main_content .section0:before {content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: 1; background: url('../images/bg_main1.png') no-repeat 50% 50%/cover;}
 .main_content .section0 .section_inner {height: 100%;}
-.main_content .section0 .section_con {padding: 60px 0 240px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.main_content .section0 .section_con {padding: 0 0 80px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .main_content .section0 .section_con img {display: block; margin: 0 auto}
 .main_content .section0 .section_con .logo_wrap {padding-bottom: 40px;}
 .main_content .section0 .logo_wrap .logo img {margin: 0 auto; display: block;}
-.main_content .section0 .logo_wrap strong {display: block; padding-top: 28px; font-size: 56px; font-weight: 300; color: #fff; text-align: center; font-family: 'EsaManru';}
-.main_content .section0 .logo_wrap .txt {display: flex; align-items: center; justify-content: center; gap: 0 16px; padding-top: 16px; font-family: 'EsaManru';}
+.main_content .section0 .logo_wrap strong {display: block; padding-top: 20px; font-size: 56px; font-weight: 300; color: #fff; text-align: center; font-family: 'EsaManru';}
+.main_content .section0 .logo_wrap .txt {display: flex; align-items: center; justify-content: center; gap: 0 16px; padding-top: 0; font-family: 'EsaManru';}
 .main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 300; color: #fff; display: flex; gap: 0 8px; align-items: center;}
 .main_content .section0 .logo_wrap .txt b i {line-height: 26px; padding: 0 12px; text-align: center; border-radius: 20px; background: #fff; font-size: 16px; font-weight: 300; color: #000;}
 .main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 300; color: #fff;}
