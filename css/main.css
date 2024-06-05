@@ -308,7 +308,7 @@ body,button,input,select,textarea,table {
     .m_img {display: block;}
     .main_content .section0 {padding: 0 16px;}
     .main_content .section0:before {background-image: url('../images/bg_main1_m.png');}
-    .main_content .section0 .section_con {display: block; /*padding: 80px 0 295px;*/}
+    .main_content .section0 .section_con {/*display: block; padding: 80px 0 295px;*/}
     .main_content .section0 .section_con .logo_wrap {padding-bottom: 55px;}
     .main_content .section0 .section_con .logo_wrap .logo {max-width: 260px; width: 100%; margin: 0 auto;}
     .main_content .section0 .logo_wrap strong {font-size: 38px;}
