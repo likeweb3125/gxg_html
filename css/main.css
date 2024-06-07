@@ -166,10 +166,10 @@ body,button,input,select,textarea,table {
 .main_content .section0 .section_inner {height: 100%;}
 .main_content .section0 .section_con {padding: 0 0 80px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .main_content .section0 .section_con img {display: block; margin: 0 auto}
-.main_content .section0 .section_con .logo_wrap {padding-bottom: 40px;}
+.main_content .section0 .section_con .logo_wrap {padding-bottom: 35px;}
 .main_content .section0 .logo_wrap .logo img {margin: 0 auto; display: block;}
-.main_content .section0 .logo_wrap strong {display: block; padding-top: 20px; font-size: 56px; font-weight: 300; color: #fff; text-align: center; font-family: 'EsaManru';}
-.main_content .section0 .logo_wrap .txt {display: flex; align-items: center; justify-content: center; gap: 0 16px; padding-top: 0; font-family: 'EsaManru';}
+.main_content .section0 .logo_wrap strong {display: block; padding-bottom: 16px; font-size: 24px; font-weight: 300; color: #fff; text-align: center; font-family: 'EsaManru';}
+.main_content .section0 .logo_wrap .txt {padding-top: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0 16px; font-family: 'EsaManru';}
 .main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 300; color: #fff; display: flex; gap: 0 8px; align-items: center;}
 .main_content .section0 .logo_wrap .txt b i {line-height: 26px; padding: 0 12px; text-align: center; border-radius: 20px; background: #fff; font-size: 16px; font-weight: 300; color: #000;}
 .main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 300; color: #fff;}
@@ -310,11 +310,11 @@ body,button,input,select,textarea,table {
     .main_content .section0:before {background-image: url('../images/bg_main1_m.png');}
     .main_content .section0 .section_con {/*display: block; padding: 80px 0 295px;*/}
     .main_content .section0 .section_con .logo_wrap {padding-bottom: 55px;}
-    .main_content .section0 .section_con .logo_wrap .logo {max-width: 260px; width: 100%; margin: 0 auto;}
-    .main_content .section0 .logo_wrap strong {font-size: 38px;}
+    .main_content .section0 .section_con .logo_wrap .logo {max-width: 300px; width: 100%; margin: 0 auto;}
+    /* .main_content .section0 .logo_wrap strong {font-size: 38px;} */
     .main_content .section0 .logo_wrap .txt {padding-top: 15px; display: block; text-align: center;}
-    .main_content .section0 .logo_wrap .txt b {display: block; font-size: 18px;}
-    .main_content .section0 .logo_wrap .txt span {display: block; padding-top: 10px; font-size: 18px;}
+    .main_content .section0 .logo_wrap .txt b {display: block; font-size: 20px;}
+    .main_content .section0 .logo_wrap .txt span {display: block; padding-top: 5px; font-size: 20px;}
     .main_content .section0 .video_wrap:before {clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);}
     .main_content .section0 .video_wrap .video {clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);}
     /* .main_content .section0 .video_wrap:before {width: 42px; height: 42px; transform: rotateZ(45deg) translateX(-30px);}

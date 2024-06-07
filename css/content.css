@@ -87,7 +87,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .list_faq .q_con a:after {content: ''; position: absolute; right: 20px; top: 50%; transform: translateY(-50%) rotateX(0); background: url('../images/faq_arrow1.svg') no-repeat 50% 100%/100%; width: 28px; height: 29px; transition: all .3s;}
 .list_faq .a_con {border-top: 1px solid transparent; background: #FAFAFD; overflow: hidden; padding: 0 90px 0 150px; height: 0; position: relative; font-size: 18px; color: #666; transition: all .5s, border .3s;}
 .list_faq li.on .q_con a:after {transform: translateY(-50%) rotateX(180deg);}
-.list_faq li.on .a_con {height: auto; padding: 25px 90px 25px 150px; border-top-color: #ddd;}
+.list_faq li.on .a_con {height: auto; padding: 25px 90px 25px 150px; border-top-color: #ddd; overflow: visible;}
 
 
 
