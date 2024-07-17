@@ -18,9 +18,10 @@
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 <meta name="format-detection" content="telephone=no" />
 <link rel="stylesheet" href="css/default.css?ver=2" />
-<link href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="js/main.js?ver=2"></script>
+<script type="text/javascript" src="link_url.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DJNRYZG1S"></script>
 <script>
@@ -33,77 +34,239 @@
 </head>
 <body class="body_user">
 <div id="wrap">
+
+    <header id="header" class="header">
+        <div class="header_inner">
+            <div class="header_con">
+                <h1 class="logo">
+                    <a href="javascript: shome();">
+                        <img src="images/logo.svg" alt="GXG">
+                    </a>
+                </h1>
+                <nav class="gnb_wrap">
+                    <ul class="gnb">
+                        <li>
+                            <a href="javascript: menu1();">
+                                <span>GXG 2024</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu11();">GXG 2024</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu12();">오시는 길</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu13();">행사장 구성</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: menu2();">
+                                <span>프로그램</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu21();">SCHEDULE</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu22();">THE STAGE</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu23();">THE ART</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu24();">THE PLAY</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu25();">THE FESTA</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: menu3();">
+                                <span>커뮤니티</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu31();">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu32();">자주 묻는 질문</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="sns_wrap">
+                <li>
+                    <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
+                </li>
+            </ul>
+            <button type="button" class="btn_m">
+                <span>모바일메뉴</span>
+            </button>
+            <div class="m_gnb_wrap">
+                <div class="dimm"></div>
+                <ul class="m_gnb">
+                    <li>
+                        <a href="javascript: menu1();">
+                            <span>GXG 2024</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu11();">GXG 2024</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu12();">오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu13();">행사장 구성</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: menu2();">
+                            <span>프로그램</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu21();">SCHEDULE</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu22();">THE STAGE</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu23();">THE ART</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu24();">THE PLAY</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu25();">THE FESTA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: menu3();">
+                            <span>커뮤니티</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu31();">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu32();">자주 묻는 질문</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bottom_box">
+                    <h2 class="gnb_logo">
+                        <img src="images/logo.svg" alt="GXG">
+                    </h2>
+                    <ul class="sns_wrap">
+                        <li>
+                            <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <!-- main -->
     <main id="main">
         <div class="content_wrap">
             <div class="sub_content">
-                <secttion class="section section1">
-                    <div class="section_inner">
-                        <div class="sub_tit">
-                            <h2>커뮤니티</h2>
-                            <span>GXG 2024에 관한 정보를 확인하세요.</span>
-                            <a href="/" class="link">GXG 2024</a>
-                        </div>
-                        <div class="user_baord">
-                            <ul class="tab_style1">
-                                <li>
-                                    <a href="faq1.html">자주 묻는 질문</a>
-                                </li>
-                                <li class="on">
-                                    <a href="notice1.html">공지사항</a>
-                                </li>
-                            </ul>
-                            <div class="board_area">
-                                <div class="board_view">
-                                    <div class="board_tit_box">
-                                        <div class="board_tit">
-                                            <h5>GXG 2024 게임음악 경연대회 : The 1st GXG SOUND TRACK 개최</h5>
-                                            <ul class="board_info">
-                                                <li>
-                                                    <strong>GXG 운영사무국</strong>
-                                                </li>
-                                                <li>
-                                                    <em>2024.06.07</em>
-                                                </li>
-                                            </ul>
+                <div class="sub_visual">
+                    <img src="images/sub_visual1.png" alt="image">
+                    <div class="visual_txt">
+                        <h2>공지사항</h2>
+                    </div>
+                </div>
+                <div class="section_wrap grey_section">
+                    <section class="section section1">
+                        <div class="section_inner">
+                            <div class="sub_tit">
+                                <h2>커뮤니티</h2>
+                                <span>GXG 2024에 관한 정보를 확인하세요.</span>
+                                <a href="javascript: shome();" class="link">GXG 2024</a>
+                            </div>
+                            <div class="user_baord">
+                                <ul class="tab_style1">
+                                    <li>
+                                        <a href="faq1.html">자주 묻는 질문</a>
+                                    </li>
+                                    <li class="on">
+                                        <a href="notice1.html">공지사항</a>
+                                    </li>
+                                </ul>
+                                <div class="board_area">
+                                    <div class="board_view">
+                                        <div class="board_tit_box">
+                                            <div class="board_tit">
+                                                <h5>GXG 2024 게임음악 경연대회 : The 1st GXG SOUND TRACK 개최</h5>
+                                                <ul class="board_info">
+                                                    <li>
+                                                        <strong>GXG 운영사무국</strong>
+                                                    </li>
+                                                    <li>
+                                                        <em>2024.06.07</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="board_con">
+                                            <div class="con">
+                                                <img src="board_images/사운드트랙축약형포스터.png" alt="image">
+                                                <br>
+                                                '게임, 문화로 즐기다!'라는 슬로건 완성된 게임 체험을 넘어, 다양한 게임의 문화적 요소를 다루는 GXG!
+                                                <br>
+                                                GXG 2024의 메인 테마를 '음악'으로 선정함에 따라, 게임을 모티브로 한 창작곡 경연대회 'The 1st GXG SOUND TRACK'을 개최합니다.
+                                                <br>
+                                                <br>
+                                                올해 처음으로 개최되는 ‘The 1st GXG SOUND TRACK’은 총 상금 2,100만원 규모로, 게임과 음악에 관심이 있는 누구나 참여 가능하며
+                                                6월 7일(금)부터 7월 21일(일)까지 접수 가능하니 재능 넘치는 여러분의 참여를 기다립니다!
+                                                <br>
+                                                <br>
+                                                <a href="/" target="_blank">✔️ The 1st SOUND TRACK 내용 확인하기</a>
+                                                <br>
+                                                <a href="https://forms.gle/XjDotKqHELpMnwHx6" target="_blank">✔️ The 1st SOUND TRACK 참가 신청 바로가기</a>
+                                                <br>
+                                                <br>
+                                                경연대회에 관한 자세한 내용은 메인 페이지 내 안내 배너와 자주 묻는 질문을 참고해주시고,
+                                                <br>
+                                                궁금하신 점은 GXG 운영사무국으로 문의 주시기 바랍니다.
+                                                <br>
+                                                (*문의: gxgworldgxg@gmail.com)
+                                                <br>
+                                                <br>
+                                                감사합니다.
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="board_con">
-                                        <div class="con">
-                                            <img src="board_images/사운드트랙축약형포스터.png" alt="image">
-                                            <br>
-                                            '게임, 문화로 즐기다!'라는 슬로건 완성된 게임 체험을 넘어, 다양한 게임의 문화적 요소를 다루는 GXG!
-                                            <br>
-                                            GXG 2024의 메인 테마를 '음악'으로 선정함에 따라, 게임을 모티브로 한 창작곡 경연대회 'The 1st GXG SOUND TRACK'을 개최합니다.
-                                            <br>
-                                            <br>
-                                            올해 처음으로 개최되는 ‘The 1st GXG SOUND TRACK’은 총 상금 2,100만원 규모로, 게임과 음악에 관심이 있는 누구나 참여 가능하며
-                                            6월 7일(금)부터 7월 21일(일)까지 접수 가능하니 재능 넘치는 여러분의 참여를 기다립니다!
-                                            <br>
-                                            <br>
-                                            <a href="/" target="_blank">✔️ The 1st SOUND TRACK 내용 확인하기</a>
-                                            <br>
-                                            <a href="https://forms.gle/XjDotKqHELpMnwHx6" target="_blank">✔️ The 1st SOUND TRACK 참가 신청 바로가기</a>
-                                            <br>
-                                            <br>
-                                            경연대회에 관한 자세한 내용은 메인 페이지 내 안내 배너와 자주 묻는 질문을 참고해주시고,
-                                            <br>
-                                            궁금하신 점은 GXG 운영사무국으로 문의 주시기 바랍니다.
-                                            <br>
-                                            (*문의: gxgworldgxg@gmail.com)
-                                            <br>
-                                            <br>
-                                            감사합니다.
-                                        </div>
+                                    <div class="btn_center_wrap">
+                                        <a href="notice1.html" class="btn_style3">목록</a>
                                     </div>
-                                </div>
-                                <div class="btn_center_wrap">
-                                    <a href="notice1.html" class="btn_style3">목록</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </secttion>
+                    </section>
+                </div>
             </div>
         </div>
     </main>
@@ -114,6 +277,7 @@
 
     <!-- footer -->
     <footer id="footer">
+        <button type="button" class="btn_top">TOP</button>
         <div class="bottom_footer">
             <div class="footer_inner">
                 <div class="footer_area">
