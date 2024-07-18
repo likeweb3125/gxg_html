@@ -18,10 +18,9 @@
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 <meta name="format-detection" content="telephone=no" />
 <link rel="stylesheet" href="css/default.css?ver=2" />
-<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.js"></script>
 <script type="text/javascript" src="js/main.js?ver=2"></script>
-<script type="text/javascript" src="link_url.js?ver=2"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DJNRYZG1S"></script>
 <script>
@@ -34,260 +33,140 @@
 </head>
 <body class="body_user">
 <div id="wrap">
-
-
-    <header id="header" class="header">
-        <div class="header_inner">
-            <div class="header_con">
-                <h1 class="logo">
-                    <a href="javascript: shome();">
-                        <img src="images/logo.svg" alt="GXG">
-                    </a>
-                </h1>
-                <nav class="gnb_wrap">
-                    <ul class="gnb">
-                        <li>
-                            <a href="javascript: menu1();">
-                                <span>GXG 2024</span>
-                            </a>
-                            <ul class="depth2">
-                                <li>
-                                    <a href="javascript: menu11();">GXG 2024</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu12();">오시는 길</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu13();">행사장 구성</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript: menu2();">
-                                <span>프로그램</span>
-                            </a>
-                            <ul class="depth2">
-                                <li>
-                                    <a href="javascript: menu21();">SCHEDULE</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu22();">THE STAGE</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu23();">THE ART</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu24();">THE PLAY</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu25();">THE FESTA</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript: menu3();">
-                                <span>커뮤니티</span>
-                            </a>
-                            <ul class="depth2">
-                                <li>
-                                    <a href="javascript: menu31();">공지사항</a>
-                                </li>
-                                <li>
-                                    <a href="javascript: menu32();">자주 묻는 질문</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <ul class="sns_wrap">
-                <li>
-                    <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
-                </li>
-            </ul>
-            <button type="button" class="btn_m">
-                <span>모바일메뉴</span>
-            </button>
-            <div class="m_gnb_wrap">
-                <div class="dimm"></div>
-                <ul class="m_gnb">
-                    <li>
-                        <a href="javascript: menu1();">
-                            <span>GXG 2024</span>
-                        </a>
-                        <ul class="depth2">
-                            <li>
-                                <a href="javascript: menu11();">GXG 2024</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu12();">오시는 길</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu13();">행사장 구성</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript: menu2();">
-                            <span>프로그램</span>
-                        </a>
-                        <ul class="depth2">
-                            <li>
-                                <a href="javascript: menu21();">SCHEDULE</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu22();">THE STAGE</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu23();">THE ART</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu24();">THE PLAY</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu25();">THE FESTA</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript: menu3();">
-                            <span>커뮤니티</span>
-                        </a>
-                        <ul class="depth2">
-                            <li>
-                                <a href="javascript: menu31();">공지사항</a>
-                            </li>
-                            <li>
-                                <a href="javascript: menu32();">자주 묻는 질문</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="bottom_box">
-                    <h2 class="gnb_logo">
-                        <img src="images/logo.svg" alt="GXG">
-                    </h2>
-                    <ul class="sns_wrap">
-                        <li>
-                            <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
-
     <!-- main -->
     <main id="main">
         <div class="content_wrap">
             <div class="sub_content">
-                <div class="sub_visual">
-                    <img src="images/sub_visual1.png" alt="image">
-                    <div class="visual_txt">
-                        <h2>자주 묻는 질문</h2>
-                    </div>
-                </div>
-                <div class="section_wrap grey_section">
-                    <section class="section section1">
-                        <div class="section_inner">
-                            <div class="sub_tit">
-                                <h2>커뮤니티</h2>
-                                <span>GXG 2024에 관한 정보를 확인하세요.</span>
-                                <a href="javascript: shome();" class="link">GXG 2024</a>
-                            </div>
-                            <div class="user_baord">
-                                <ul class="tab_style1">
-                                    <li class="on">
-                                        <a href="faq1.html">자주 묻는 질문</a>
-                                    </li>
-                                    <li>
-                                        <a href="notice1.html">공지사항</a>
-                                    </li>
-                                </ul>
-                                <div class="board_area">
-                                    <div class="board_faq">
-                                        <ul class="list_faq">
-                                            <li>
-                                                <div class="q_con">
-                                                    <a href="javascript: void(0)">[관람 안내] 사진 및 동영상 촬영이 가능한가요?</a>
-                                                </div>
-                                                <div class="a_con">
-                                                    <p>
-                                                        GXG 2024 행사장 대부분의 구역에서 사진 및 동영상 촬영이 허용되지만, 일부 특별 전시 구역에서는 촬영이 금지될 수 있습니다. 
-                                                        <br>
-                                                        현장에서 관련 안내를 확인해 주세요.
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="q_con">
-                                                    <a href="javascript: void(0)">[편의시설 안내] 주차 공간이 제공되나요?</a>
-                                                </div>
-                                                <div class="a_con">
-                                                    <p>
-                                                        GXG 2024 행사장 주변에 주차 공간이 마련되어 있지만, 주차 공간이 한정되어 있어 행사 당일 도로 및 주차장이 혼잡할 수 있습니다. 
-                                                        <br>
-                                                        따라서 대중교통을 이용하시는 것을 권장해 드립니다. 
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="q_con">
-                                                    <a href="javascript: void(0)">[편의시설 안내] 행사장 내 물품보관소 운영하나요?</a>
-                                                </div>
-                                                <div class="a_con">
-                                                    <p>
-                                                        물품보관소는 별도로 운영되지 않습니다. 
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="q_con">
-                                                    <a href="javascript: void(0)">[편의시설 안내] 행사장 내에서 분실한 소지품은 어디서 찾을 수 있나요?</a>
-                                                </div>
-                                                <div class="a_con">
-                                                    <p>
-                                                        소지품을 분실하였을 경우 운영사무국에 방문해 문의해 주시기를 바랍니다.
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="q_con">
-                                                    <a href="javascript: void(0)">[편의시설 안내] 행사장 내 응급의료 시설이 있나요?</a>
-                                                </div>
-                                                <div class="a_con">
-                                                    <p>
-                                                        GXG 2024는 안전한 행사를 위해 행사장 내에 응급의료팀이 상시 대기하고 있습니다.
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="paging">
-                                        <a href="faq1.html" class="btn_first btn_paging">처음</a>
-                                        <a href="faq1.html" class="btn_prev btn_paging">이전</a>
-                                        <a href="faq1.html">1</a>
-                                        <strong>2</strong>
-                                        <!-- <a href="#" class="btn_next btn_paging">다음</a>
-                                        <a href="#" class="btn_last btn_paging">끝</a> -->
-                                    </div>
+                <secttion class="section section1">
+                    <div class="section_inner">
+                        <div class="sub_tit">
+                            <h2>커뮤니티</h2>
+                            <span>GXG 2024에 관한 정보를 확인하세요.</span>
+                            <a href="/" class="link">GXG 2024</a>
+                        </div>
+                        <div class="user_baord">
+                            <ul class="tab_style1">
+                                <li class="on">
+                                    <a href="faq1.html">자주 묻는 질문</a>
+                                </li>
+                                <li>
+                                    <a href="notice1.html">공지사항</a>
+                                </li>
+                            </ul>
+                            <div class="board_area">
+                                <div class="board_faq">
+                                    <ul class="list_faq">
+                                        <li>
+                                            <div class="q_con">
+                                                <a href="javascript: void(0)">[GXG SOUND TRACK] 음원과 실연 영상을 함께 제출해야 하는 이유가 있나요?</a>
+                                            </div>
+                                            <div class="a_con">
+                                                <p>
+                                                    제출한 음원 및 영상으로 예선 심사를 진행 할 예정이며, 본선 진출 시 현장에서 무대 공연이 진행되기 때문에
+                                                    <br>
+                                                    예선 심사 시 참가자(팀)의 작곡, 가창, 연주 실력을 확인할 수 있는 실연 영상을 함께 제출해야 합니다
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="q_con">
+                                                <a href="javascript: void(0)">[GXG SOUND TRACK] 음원과 실연 영상의 편곡이 같아야 하나요?</a>
+                                            </div>
+                                            <div class="a_con">
+                                                <p>
+                                                    음원과 실연 영상의 편곡은 다를 수 있습니다. 음원의 경우 대회 전 제작된 경우가 있기 때문입니다.
+                                                    <br>
+                                                    하지만 실연 영상과 본선 진출 시 무대에서의 곡 편성은 동일해야 합니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="q_con">
+                                                <a href="javascript: void(0)">[GXG SOUND TRACK] 실연 영상을 어떻게 촬영해야 하나요? 유의할 점이 있나요?</a>
+                                            </div>
+                                            <div class="a_con">
+                                                <p>
+                                                    제출하는 실연 영상은 공연이나 무대 실황보다는 직접 연주/가창하는 모습을 확인할 수 있고, 소리가 잘 들리는 환경에서 촬영하실 것을 권고합니다.
+                                                    <br>
+                                                    가창자의 입, 연주자의 손 등 실연 중인 것이 확인되지 않는 영상은 심사에 감점요인이 될 수 있습니다.
+                                                    <br>
+                                                    <br>
+                                                    실연에는 최소 1종 이상의 가창이나 연주가 포함되어야 합니다.
+                                                    <br>
+                                                    연주되는 악기의 종류는 무관하므로 디제잉 장비 등 디지털 악기류도 가능하지만, 본선 진출 시 동일 구성으로 무대 연주가 가능해야 합니다.
+                                                    <br>
+                                                    <br>
+                                                    실연 영상의 소리는 별도의 후반작업을 하지 않고 제출해야 합니다. 음질, 녹음 퀄리티 등은 심사 시 영향을 주지 않습니다.
+                                                    <br>
+                                                    <br>
+                                                    참가 신청 시 작성된 정보와 실연 영상, 본선 무대의 멤버 구성 및 악기 편성은 동일해야 합니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="q_con">
+                                                <a href="javascript: void(0)">[GXG SOUND TRACK] 유튜브에 실연 영상 업로드 시 일부 공개도 가능한가요?</a>
+                                            </div>
+                                            <div class="a_con">
+                                                <p>
+                                                    가능합니다. 전체공개, 혹은 일부공개로 유튜브에 업로드 한 후 URL을 제출해주시면 됩니다.
+                                                    <br>
+                                                    <br>
+                                                    다만 대회가 모두 마무리 될 때까지 영상을 비공개 또는 삭제하지 말아주세요.
+                                                    <br>
+                                                    신청 시 작성하신 URL이 영상으로 연결되지 않거나 비공개, 삭제되었을 경우 필수 제출 자료 미비로 탈락되는 등 심사에 불이익이 발생할 수 있으니 유의 바랍니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="q_con">
+                                                <a href="javascript: void(0)">[GXG SOUND TRACK] 예선 및 본선 심사 기준이 어떻게 되나요?</a>
+                                            </div>
+                                            <div class="a_con">
+                                                <p>
+                                                    예선의 경우, 제출 음원 및 실연 영상을 기준으로 사전 심사위원단의 평가에 따라 결과가 산출됩니다.
+                                                    <br>
+                                                    심사 항목은 곡 구성, 실연 실력(가창 포함), 제출 곡과 모티브가 된 게임 간 연관성(스토리텔링) 등으로 구성됩니다.
+                                                    <br>
+                                                    <br>
+                                                    본선의 경우, 현장 심사를 거쳐 일정 비율에 따라 점수로 환산되며, 당일 무대에서 최종 결과가 발표됩니다.
+                                                    <br>
+                                                    심사 항목은 곡 구성, 실연 실력(가창 포함), 퍼포먼스 및 무대 매너 등으로 구성됩니다.
+                                                    <br>
+                                                    <br>
+                                                    ※ 심사 방식은 일부 변동될 수 있으며, 본선 무대 구성 및 심사 방식은 추후 홈페이지에서 확인하실 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="q_con">
+                                                <a href="javascript: void(0)">[GXG SOUND TRACK] 예선 결과 발표는 언제 어디서 확인할 수 있나요?</a>
+                                            </div>
+                                            <div class="a_con">
+                                                <p>
+                                                    8월 초 예선 심사를 거쳐 총 6팀의 본선 진출팀이 결정됩니다.
+                                                    <br>
+                                                    본선 진출팀을 대상으로 8월 초중순 경 별도 연락 드릴 예정이며, 최종 결과는 홈페이지에서 확인하실 수 있습니다.
+                                                    <br>
+                                                    <br>
+                                                    ※ 주최 측 사정에 따라 발표 일정 등 세부 내용이 조정될 수 있습니다.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="paging">
+                                    <a href="faq1.html" class="btn_first btn_paging">처음</a>
+                                    <a href="faq1.html" class="btn_prev btn_paging">이전</a>
+                                    <a href="faq1.html">1</a>
+                                    <strong>2</strong>
+                                    <!-- <a href="#" class="btn_next btn_paging">다음</a>
+                                    <a href="#" class="btn_last btn_paging">끝</a> -->
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </secttion>
             </div>
         </div>
     </main>
@@ -298,7 +177,6 @@
 
     <!-- footer -->
     <footer id="footer">
-        <button type="button" class="btn_top">TOP</button>
         <div class="bottom_footer">
             <div class="footer_inner">
                 <div class="footer_area">
