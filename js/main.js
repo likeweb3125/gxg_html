@@ -214,27 +214,20 @@ document.addEventListener("DOMContentLoaded", () => {
             const depth2 = parent.querySelector('.depth2');
             
             if (depth2) {
-                e.preventDefault();
-                
-                parent.classList.toggle('active');
-                
-                parent.parentElement.querySelectorAll('li').forEach(sibling => {
-                    if (sibling !== parent) {
-                        sibling.classList.remove('active');
-                    }
-                });
+                e.preventDefault(); 
                 
                 document.querySelectorAll('.depth2').forEach(el => {
-                    if (el !== depth2) {
-                        slideUp(el);
+                    const siblingParent = el.parentElement;
+                    if (el === depth2) {
+                        if (!siblingParent.classList.contains('active')) {
+                            siblingParent.classList.add('active');
+                            slideDown(el, 'grid');
+                        }
+                    } else {
+                        siblingParent.classList.remove('active');
+                        slideUp(el, 'none');
                     }
                 });
-                
-                if (parent.classList.contains('active')) {
-                    slideDown(depth2, 'grid');
-                } else {
-                    slideUp(depth2, 'none');
-                }
             }
         });
     });
@@ -392,34 +385,30 @@ document.addEventListener("DOMContentLoaded", () => {
     window.dispatchEvent(new Event('scroll'));
 
     // 리사이즈 계산 class
-    // const sizeClass = (width) => {
-    //     let className;
-    //     if (width > 1417) {
-    //         className = 'p_size';
-    //     } else if (width >= 768) {
-    //         className = 't_size';
-    //     } else {
-    //         className = 'm_size';
-    //     }
-    //     if (!document.body.classList.contains(className)) {
-    //         document.body.classList.remove('p_size', 't_size', 'm_size');
-    //         document.body.classList.add(className);
-    //     }
-    // }
-    // sizeClass(window.innerWidth);
+    const sizeClass = (width) => {
+        let className;
+        if (width > 1417) {
+            className = 'p_size';
+        } else if (width >= 768) {
+            className = 't_size';
+        } else {
+            className = 'm_size';
+        }
+        if (!document.body.classList.contains(className)) {
+            document.body.classList.remove('p_size', 't_size', 'm_size');
+            document.body.classList.add(className);
+        }
+    }
+    sizeClass(window.innerWidth);
     
     // 리사이즈 이벤트
-    // let resizeTimer;
-    // window.addEventListener('resize', () => {
-    //     clearTimeout(resizeTimer);
-    //     resizeTimer = setTimeout(() => {
-    //         const windowWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+        const windowWidth = window.innerWidth;
 
-    //         sizeClass(windowWidth);
-    //     }, 150);
-    // });
+        sizeClass(windowWidth);
+    });
 
-    // window.dispatchEvent(new Event('resize'));
+    window.dispatchEvent(new Event('resize'));
 
 
 
