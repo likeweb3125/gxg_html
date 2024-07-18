@@ -320,7 +320,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
 .main_content .logo_section .box_item b {font-size: 32px; font-weight: 700; color: #fff; flex: 0 0 180px; font-family: var(--point-font1);}
 .main_content .logo_section .box2 .box_item_inner b {display: block; padding-bottom: 40px;}
 .main_content .logo_section .box_item .logo_box {flex: 1; display: flex; justify-content: space-between; align-items: center;}
-.main_content .logo_section .box2 .box_item .logo_box {padding-bottom: 20px; text-align: center; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}
+.main_content .logo_section .box2 .box_item .logo_box {padding-bottom: 20px; text-align: center; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; gap: 40px 0;}
 .main_content .logo_section .list_box {padding-top: 40px;}
 .main_content .logo_section .list_box > li {margin-top: 30px; padding-top: 130px; position: relative;}
 .main_content .logo_section .list_box > li:first-of-type {margin-top: 0;}
