@@ -216,7 +216,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .page_info1 .section2 .program_con .list_program a:after {content: ''; position: absolute; right: 90px; top: 50%; transform: translateY(-50%) rotateX(0); width: 80px; height: 80px; background: url('../images/arrow_7.svg') no-repeat 50% 50%/100%; transition: all .3s;}
 .page_info1 .section2 .program_con .list_program a .txt {position: absolute; left: 40px; top: 50%; transform: translateY(-50%); }
 .page_info1 .section2 .program_con .list_program .inner_con {overflow: hidden; height: 0; transition: all .5s;}
-.page_info1 .section2 .program_con .list_program .list_txt {border: 1px solid #ED0773; border-top: none; padding: 20px 40px;}
+.page_info1 .section2 .program_con .list_program .list_txt {border: 1px solid #ED0773; border-top: none; padding: 20px 40px; border-bottom-color: transparent;}
 .page_info1 .section2 .program_con .list_program > li:nth-of-type(2) .list_txt {border-color: #602D91;}
 .page_info1 .section2 .program_con .list_program > li:nth-of-type(3) .list_txt {border-color: #007947;}
 .page_info1 .section2 .program_con .list_program > li:nth-of-type(4) .list_txt {border-color: #007CC4;}
@@ -229,6 +229,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .page_info1 .section2 .program_con .list_program > li:nth-of-type(4) .list_txt li:before {background: url('../images/ic_txt4.svg') no-repeat 50% 50%/100%;}
 .page_info1 .section2 .program_con .list_program > li.on a:after {transform: translateY(-50%) rotateX(180deg);}
 .page_info1 .section2 .program_con .list_program > li.on .inner_con {overflow: visible; height: auto;}
+.page_info1 .section2 .program_con .list_program > li.on .inner_con .list_txt {border-bottom-color: #ED0773;}
 .page_info1 .section3 .list_pic {padding-top: 60px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 40px 24px;}
 .page_info1 .section3 .list_pic li a {display: block; width: 100%; height: 100%;}
 .page_info1 .section3 .list_pic .img {position: relative; overflow: hidden; box-shadow: 0px 0px 36px 0px rgba(237, 6, 115, 0); transition: all .5s;}
