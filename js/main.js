@@ -34,9 +34,82 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     
+    // fade애니메이션 함수
+    const animateElement = (element, type, callback, duration) => {
+        const startOpacity = type === 'fadeIn' ? 0 : 1;
+        const endOpacity = type === 'fadeIn' ? 1 : 0;
+        let startTime = null;
 
+        const animationStep = (timestamp) => {
+            if (!startTime) {
+                startTime = timestamp;
+            }
 
+            const progress = timestamp - startTime;
+            let opacity = startOpacity + (progress / duration) * (endOpacity - startOpacity);
 
+            opacity = Math.min(Math.max(opacity, 0), 1);
+            element.style.opacity = opacity.toFixed(2);
+
+            if (progress < duration) {
+                requestAnimationFrame(animationStep);
+            } else {
+                if (typeof callback === 'function') {
+                    callback();
+                }
+            }
+        }
+
+        requestAnimationFrame(animationStep);
+    }
+
+    // 메인 팝업 닫기
+    const mainPop = document.querySelector('.pop_main');
+    const mainPopFn = () => {
+        mainPop.querySelector('.main_pop_close').addEventListener('click', (e) => {
+            animateElement(mainPop, 'fadeOut', () => {
+                mainPop.style.display = 'none';
+            }, 200);
+        });
+
+        mainPop.querySelector('.dimm').addEventListener('click', (e) => {
+            animateElement(mainPop, 'fadeOut', () => {
+                mainPop.style.display = 'none';
+            }, 200);
+        });
+    }
+    // 메인 팝업 1일 안보기
+    const oneDayPopup = () => {
+        const checkPopupVisibility = () => {
+            const hideUntil = localStorage.getItem('oneDayPopup');
+            if (hideUntil) {
+                const now = new Date();
+                if (now >= new Date(hideUntil)) {
+                    mainPop.style.display = 'block';
+                    localStorage.removeItem('oneDayPopup');
+                }
+            } else {
+                mainPop.style.display = 'block';
+            }
+        }
+        checkPopupVisibility();
+        document.getElementById('oneDayPopup').addEventListener('click', (e) => {
+            e.preventDefault();
+            hideForOneDay();
+        });
+        const hideForOneDay = () => {
+            const now = new Date();
+            const hideUntil = new Date(now.getTime() + 24 * 60 * 60 * 1000); // 현재 시간에서 24시간 후
+            localStorage.setItem('oneDayPopup', hideUntil.toISOString());
+            animateElement(mainPop, 'fadeOut', () => {
+                mainPop.style.display = 'none';
+            }, 200);
+        }
+    }
+    if(mainPop) {
+        mainPopFn();
+        oneDayPopup();
+    }
 
 
 

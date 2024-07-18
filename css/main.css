@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+/* 사용자 공통변수 */
+:root {
+    --point-color1: #ED2452;
+    --point-color2: #F9FEFF;
+    --point-color3: #F85C83;
+    --point-color4: #ED0773;
+    --point-font1: 'EsaManru';
+}
+
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
 @font-face {
     font-family: 'EsaManru';
@@ -127,18 +136,19 @@ body,button,input,select,textarea,table {
 /* 버튼 스타일 */
 .btn_style1 {text-align: center; position: relative; border: 1px solid var(--point-color4); position: relative; transition: all .5s;}
 .btn_style1:before {content: ''; position: absolute; left: 50%; top: 50%; width: calc(100% - 6px); height: calc(100% - 6px); clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px); background: #fff; transform: translate(-50%, -50%) scale(0); transition: all .5s;}
-.btn_style1 span {position: relative; z-index: 1; display: flex; justify-content: center; align-items: center; gap: 0 24px; font-size: 22px; font-weight: 500; color: var(--point-color4); font-family: 'EsaManru'; line-height: 30px; padding: 25px 0;}
+.btn_style1 span {position: relative; z-index: 1; display: flex; justify-content: center; align-items: center; gap: 0 24px; font-size: 22px; font-weight: 500; color: var(--point-color4); font-family: var(--point-font1); line-height: 30px; padding: 25px 0;}
 .btn_style1 span:after {content: ''; width: 0; height: 0; border: 6px solid transparent; border-top-width: 6px; border-bottom-width: 6px; border-left-color: var(--point-color4);}
 .btn_style1:hover {border-color: #fff;}
 .btn_style1:hover:before {transform: translate(-50%, -50%) scale(1);}
 .btn_style2 {text-align: center; position: relative; border: 1px solid #fff; position: relative; transition: all .5s;}
 .btn_style2:before {content: ''; position: absolute; left: 50%; top: 50%; width: calc(100% - 6px); height: calc(100% - 6px); clip-path: polygon(10px 0%, calc(100% - 10px) 0%, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0% calc(100% - 10px), 0% 10px); background: var(--point-color4); transform: translate(-50%, -50%) scale(0); transition: all .5s;}
-.btn_style2 span {position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 24px; font-size: 22px; font-weight: 500; color: #fff; font-family: 'EsaManru'; line-height: 30px; padding: 25px 0;}
+.btn_style2 span {position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0 24px; font-size: 22px; font-weight: 500; color: #fff; font-family: var(--point-font1); line-height: 30px; padding: 25px 0;}
 .btn_style2 span:after {content: ''; width: 0; height: 0; border: 6px solid transparent; border-top-width: 6px; border-bottom-width: 6px; border-left-color: #fff;}
 .btn_style2:hover {border-color: #fff;}
 .btn_style2:hover:before {transform: translate(-50%, -50%) scale(1);}
 .btn_style3 {display: inline-block; vertical-align: top; border: 1px solid #ddd; max-width: 240px; width: 100%; line-height: 20px; padding: 15px 0; text-align: center; font-size: 16px; font-weight: 500; color: #666;}
-
+.btn_style4 {display: inline-block; vertical-align: top; background: #666; font-size: 24px; font-weight: 500; color: #fff; font-family: var(--point-font1); line-height: 30px; padding: 20px 0; text-align: center;}
+.btn_style5 {display: inline-block; vertical-align: top; background: #222154; font-size: 24px; font-weight: 500; color: #fff; font-family: var(--point-font1); line-height: 30px; padding: 20px 0; text-align: center;}
 
 
 
@@ -168,8 +178,8 @@ body,button,input,select,textarea,table {
 .main_content .section0 .section_con img {display: block; margin: 0 auto}
 .main_content .section0 .section_con .logo_wrap {padding-bottom: 35px;}
 .main_content .section0 .logo_wrap .logo img {margin: 0 auto; display: block;}
-.main_content .section0 .logo_wrap strong {display: block; padding-bottom: 16px; font-size: 24px; font-weight: 300; color: #fff; text-align: center; font-family: 'EsaManru';}
-.main_content .section0 .logo_wrap .txt {padding-top: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0 16px; font-family: 'EsaManru';}
+.main_content .section0 .logo_wrap strong {display: block; padding-bottom: 16px; font-size: 24px; font-weight: 300; color: #fff; text-align: center; font-family: var(--point-font1);}
+.main_content .section0 .logo_wrap .txt {padding-top: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0 16px; font-family: var(--point-font1);}
 .main_content .section0 .logo_wrap .txt b {font-size: 20px; font-weight: 300; color: #fff; display: flex; gap: 0 8px; align-items: center;}
 .main_content .section0 .logo_wrap .txt b i {line-height: 26px; padding: 0 12px; text-align: center; border-radius: 20px; background: #fff; font-size: 16px; font-weight: 300; color: #000;}
 .main_content .section0 .logo_wrap .txt span {font-size: 20px; font-weight: 300; color: #fff;}
@@ -189,7 +199,7 @@ body,button,input,select,textarea,table {
 .main_content .section0 .banner strong {text-align: center; position: relative; padding: 0 63px;}
 .main_content .section0 .banner strong:before {content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 23px; height: 14px; background: url('../images/arrow_1.svg') no-repeat 50% 50%/auto 100%;}
 .main_content .section0 .banner strong:after {content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 23px; height: 14px; background: url('../images/arrow_1.svg') no-repeat 50% 50%/auto 100%;}
-.main_content .section0 .banner strong b {display: block; font-size: 22px; font-weight: 700; color: #fff; font-family: 'EsaManru'; padding: 0 63px; position: relative;}
+.main_content .section0 .banner strong b {display: block; font-size: 22px; font-weight: 700; color: #fff; font-family: var(--point-font1); padding: 0 63px; position: relative;}
 .main_content .section0 .banner strong b:before {content: ''; position: absolute; left: 0; top: 50%; width: 23px; aspect-ratio: 22 / 34; background: url('../images/arrow_2.svg') no-repeat 50% 50%/auto 100%; transform: translateY(-50%);}
 .main_content .section0 .banner strong b:after {content: ''; position: absolute; right: 0; top: 50%; width: 23px; aspect-ratio: 22 / 34; background: url('../images/arrow_2.svg') no-repeat 50% 50%/auto 100%; transform: translateY(-50%);}
 .main_content .section_wrap {position: relative; overflow: hidden;}
@@ -295,7 +305,7 @@ body,button,input,select,textarea,table {
 
 
 /********************************** 모바일 **********************************/
-@media screen and (max-width: 920px){
+@media screen and (max-width: 767px){
     .btn_style1 span {padding: 15px 0; font-size: 18px;}
     .btn_style2 span {padding: 15px 0; font-size: 16px;}
     .btn_style2 span:after {display: none;}
