@@ -17,10 +17,10 @@
 .pop_main .txt_box p b {font-weight: 300; color: #ED0773;}
 .pop_main .btn_pop_wrap {display: flex;}
 .pop_main .btn_pop_wrap a {flex: 1 1 0;}
-.pop_main .txt_box .link_inner strong {display: block; padding-top: 25px; line-height: 1; font-size: 62px; font-weight: 700; color: #000; font-family: var(--point-font1);}
+.pop_main .txt_box .link_inner strong {display: block; padding-top: 25px; line-height: 1; font-size: 60px; font-weight: 700; color: #000; font-family: var(--point-font1);}
 .pop_main .txt_box .link_inner strong:first-of-type {padding-top: 0;}
 .pop_main .txt_box .link_inner strong b {color: #ED0773;}
-.pop_main .txt_box .link_inner em {width: calc(100% - 40px); margin: 0 auto; background: #ED0773; display: block; margin-top: 40px; text-align: center; line-height: 30px; padding: 25px 0; border-radius: 60px; font-size: 48px; font-weight: 500; color: #fff; font-family: var(--point-font1);}
+.pop_main .txt_box .link_inner em {width: calc(100% - 40px); margin: 0 auto; background: #ED0773; display: block; margin-top: 32px; text-align: center; line-height: 30px; padding: 25px 0; border-radius: 60px; font-size: 40px; font-weight: 500; color: #fff; font-family: var(--point-font1);}
 .pop_main .txt_box + img {margin-top: 20px;}
 
 
