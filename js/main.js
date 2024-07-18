@@ -339,6 +339,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 mainPop.style.display = 'none';
             }, 200);
         });
+
+        mainPop.querySelector('.dimm').addEventListener('click', (e) => {
+            animateElement(mainPop, 'fadeOut', () => {
+                mainPop.style.display = 'none';
+            }, 200);
+        });
     }
     // 메인 팝업 1일 안보기
     const oneDayPopup = () => {
