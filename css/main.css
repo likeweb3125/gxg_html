@@ -329,9 +329,11 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
 .main_content .logo_section .box_item b {font-size: 32px; font-weight: 700; color: #000; flex: 0 0 180px; font-family: var(--point-font1);}
 .main_content .logo_section .box2 .box_item_inner b {display: block; padding-bottom: 40px;}
 .main_content .logo_section .box_item .logo_box {flex: 1; display: flex; justify-content: space-between; align-items: center;}
-.main_content .logo_section .box2 .box_item .logo_box {padding-bottom: 20px; text-align: center; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; gap: 60px;}
+.main_content .logo_section .box2 .box_item .logo_box { text-align: center; display: flex; justify-content: center; gap: 40px 60px; margin-top: 40px;}
+.main_content .logo_section .box2 .box_item .logo_box:first-of-type {margin-top: 0;}
+.main_content .logo_section .box2 .box_item .logo_box:last-of-type {padding-bottom: 20px;}
 .main_content .logo_section .box2 .box_item .logo_box .img {display: flex; justify-content: center; align-items: center;}
-.main_content .logo_section .box2 .box_item .logo_box .img img {width: 160px;}
+.main_content .logo_section .box2 .box_item .logo_box .img img {width: 145px;}
 .main_content .logo_section .list_box {padding-top: 40px;}
 .main_content .logo_section .list_box > li {margin-top: 30px; padding-top: 130px; position: relative;}
 .main_content .logo_section .list_box > li:first-of-type {margin-top: 0;}
