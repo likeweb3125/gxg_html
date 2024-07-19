@@ -91,86 +91,89 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // loop할 시 버그생김
     // section2 슬라이더1
-    let main2Slider1, main2Slider2;
-    let isUpdating = false;
+    if(document.querySelector('.main_content')) {
+        let main2Slider1, main2Slider2;
+        let isUpdating = false;
 
-    const main2InitializeSliders = () => {
-        main2Slider2 = new Swiper(".section2_slider2", {
-            observer: true,
-            observeParents: true,
-            simulateTouch: false,
-            speed: 600,
-            autoplay: {
-                delay: 2000,
-            },
-            pagination: {
-                el: '.section2_slider2 .swiper-pagination',
-                type: 'bullets',
-            },
-        });
+        const main2InitializeSliders = () => {
+            main2Slider2 = new Swiper(".section2_slider2", {
+                observer: true,
+                observeParents: true,
+                simulateTouch: false,
+                speed: 600,
+                autoplay: {
+                    delay: 2000,
+                },
+                pagination: {
+                    el: '.section2_slider2 .swiper-pagination',
+                    type: 'bullets',
+                },
+            });
 
-        main2Slider1 = new Swiper(".section2_slider1", {
-            navigation: {
-                nextEl: ".slider2 .swiper-button-next",
-                prevEl: ".slider2 .swiper-button-prev",
-            },
-            observer: true, 
-            observeParents: true,
-            simulateTouch: false,
-            speed: 600,
-            autoplay: {
-                delay: 2000,
-            },
-        });
+            main2Slider1 = new Swiper(".section2_slider1", {
+                navigation: {
+                    nextEl: ".slider2 .swiper-button-next",
+                    prevEl: ".slider2 .swiper-button-prev",
+                },
+                observer: true, 
+                observeParents: true,
+                simulateTouch: false,
+                speed: 600,
+                autoplay: {
+                    delay: 2000,
+                },
+            });
 
-        addEventListeners();
-    };
+            addEventListeners();
+        };
 
-    const addEventListeners = () => {
-        main2Slider1.on('slideChange', () => {
-            if (!isUpdating) {
-                isUpdating = true;
-                main2Slider2.slideTo(main2Slider1.realIndex);
-                updateRollingText(main2Slider1.realIndex);
-                isUpdating = false;
+        const addEventListeners = () => {
+            main2Slider1.on('slideChange', () => {
+                if (!isUpdating) {
+                    isUpdating = true;
+                    main2Slider2.slideTo(main2Slider1.realIndex);
+                    updateRollingText(main2Slider1.realIndex);
+                    isUpdating = false;
+                }
+            });
+
+            main2Slider2.on('slideChange', () => {
+                if (!isUpdating) {
+                    isUpdating = true;
+                    main2Slider1.slideTo(main2Slider2.realIndex);
+                    updateRollingText(main2Slider2.realIndex);
+                    isUpdating = false;
+                }
+            });
+        };
+
+        document.querySelectorAll('.rolling_txt .item_txt')[0].classList.add('on');
+        const updateRollingText = (activeIndex) => {
+            document.querySelectorAll('.rolling_txt .item_txt').forEach((el) => {
+                el.classList.remove('on');
+            });
+            document.querySelector(`.rolling_txt .item_txt:nth-child(${activeIndex + 1})`).classList.add('on');
+        };
+        main2InitializeSliders();
+
+        let main2Slider1Mobile, main2Slider2Mobile, main2Slider3Mobile, main2Slider4Mobile;
+        const main2InitializeSlidersMobile = () => {
+            const swiperOption = {
+                spaceBetween: 8,
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1.5,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
             }
-        });
-
-        main2Slider2.on('slideChange', () => {
-            if (!isUpdating) {
-                isUpdating = true;
-                main2Slider1.slideTo(main2Slider2.realIndex);
-                updateRollingText(main2Slider2.realIndex);
-                isUpdating = false;
-            }
-        });
-    };
-
-    const updateRollingText = (activeIndex) => {
-        document.querySelectorAll('.rolling_txt .item_txt').forEach((el) => {
-            el.classList.remove('on');
-        });
-        document.querySelector(`.rolling_txt .item_txt:nth-child(${activeIndex + 1})`).classList.add('on');
-    };
-    main2InitializeSliders();
-
-    let main2Slider1Mobile, main2Slider2Mobile, main2Slider3Mobile, main2Slider4Mobile;
-    const main2InitializeSlidersMobile = () => {
-        const swiperOption = {
-            spaceBetween: 8,
-            observer: true,
-            observeParents: true,
-            slidesPerView: 1.5,
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
+            main2Slider1Mobile = new Swiper(".m_section2_slider1", swiperOption);
+            main2Slider2Mobile = new Swiper(".m_section2_slider2", swiperOption);
+            main2Slider3Mobile = new Swiper(".m_section2_slider3", swiperOption);
+            main2Slider4Mobile = new Swiper(".m_section2_slider4", swiperOption);
         }
-        main2Slider1Mobile = new Swiper(".m_section2_slider1", swiperOption);
-        main2Slider2Mobile = new Swiper(".m_section2_slider2", swiperOption);
-        main2Slider3Mobile = new Swiper(".m_section2_slider3", swiperOption);
-        main2Slider4Mobile = new Swiper(".m_section2_slider4", swiperOption);
+        // main2InitializeSlidersMobile();
     }
-    main2InitializeSlidersMobile();
 
     const btnTop = document.querySelector('.btn_top');
     if(btnTop) {
@@ -217,7 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (el === depth2) {
                         if (!siblingParent.classList.contains('active')) {
                             siblingParent.classList.add('active');
-                            slideDown(el, 'grid');
+                            slideDown(el, 'block');
                         }
                     } else {
                         siblingParent.classList.remove('active');
