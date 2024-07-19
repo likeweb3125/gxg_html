@@ -304,7 +304,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
 .main_content .section3 h2 span:first-of-type {padding-top: 0;}
 .main_content .section3 h2 span:first-of-type i {display: flex; justify-content: center; align-items: center; gap: 0 20px;}
 .main_content .section3 h2 span b {-webkit-text-stroke: 1px #fff; color: transparent;}
-.main_content .logo_section .top_box > div {margin-top: 48px;}
+.main_content .logo_section .top_box > div {margin-top: 40px;}
 .main_content .logo_section .top_box > div:first-of-type {margin-top: 0;}
 .main_content .logo_section .box1 {display: flex; gap: 0 40px;}
 .main_content .logo_section .box2.box2_1 .box_item .logo_box {grid-template-columns: 1fr 1fr 1fr;}
@@ -469,7 +469,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .section1 .time_txt .top_box {font-size: 18px;}
     .main_content .section1 .txt_box:before {bottom: 13%;}
     .main_content .section1 .txt_box:after {bottom: 13%;}
-    .main_content .section2 {padding: 80px 0 160px;}
+    .main_content .section2 {padding: 80px 0 100px;}
     .main_content .section2 .tit_txt {padding: 0 40px 40px;}
     .main_content .section2 .tit_txt h2 {position: static;}
     .main_content .section2 .tit_txt br:nth-of-type(2) {display: none;}
@@ -488,15 +488,15 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .section2 .slider2 .swiper-pagination {display: block; position: absolute; left: auto; right: 0; top: auto; bottom: 45px; display: flex; justify-content: flex-end; gap: 8px; padding: 0 40px;}
     .main_content .section2 .slider2 .swiper-pagination span {opacity: 1; width: 10px; height: 10px; border-radius: 10px; background: #fff; margin: 0; transition: all .5s;}
     .main_content .section2 .slider2 .swiper-pagination span.swiper-pagination-bullet-active {width: 36px; background: #222154;}
-    .main_content .section3 {padding: 120px 0 170px;}
+    .main_content .section3 {padding: 0 0 170px;}
     .main_content .section3 h2 {padding-bottom: 80px;}
     .main_content .section3 h2 br {display: block;}
     .main_content .section3 h2 span {font-size: 40px;}
     .main_content .section3 h2 span img {height: 80px;}
     .main_content .logo_section .box2.box2_1 .box_item .logo_box {grid-template-columns: 1fr; gap: 60px;}
     .main_content .logo_section .box1 {display: block;}
-    .main_content .logo_section .box_mask {margin-top: 50px;}
-    .main_content .logo_section .box_mask:first-of-type {margin-top: 0;}
+    .main_content .logo_section .box1 .box_mask {margin-top: 50px;}
+    .main_content .logo_section .box1 .box_mask:first-of-type {margin-top: 0;}
     .main_content .logo_section .box2 .box_item .logo_box {display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px;}
     .main_content .logo_section .box_item .box_item_inner {padding: 30px 60px;}
     .main_content .logo_section .list_box {padding-top: 70px;}
@@ -579,7 +579,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .section1 .txt_box .txt {top: 0;}
     .main_content .section1 .txt_box {gap: 14%;}
     .main_content .section1 .txt_box .txt:before {width: 44px;}
-    .main_content .section2 {padding: 60px 0 80px;}
+    .main_content .section2 {padding: 60px 0 0;}
     .main_content .section2 .tit_txt h2 {font-size: 32px;}
     .main_content .section2 .tit_txt {padding: 0 20px 20px;}
     .main_content .section2 .slider_wrap {display: none;}
@@ -598,7 +598,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .section3 h2 {padding-bottom: 60px;}
     .main_content .section3 h2 span {font-size: 32px; margin-top: 12px;}
     .main_content .section3 h2 span img {height: 40px;}
-    .main_content .logo_section .box1 {padding-bottom: 36px;}
+    /* .main_content .logo_section .box1 {padding-bottom: 36px;} */
     .main_content .logo_section .box_mask {margin-top: 36px;}
     .main_content .logo_section .box_item .box_item_inner {display: block; padding: 30px 20px 40px;}
     .main_content .logo_section .box_item b {display: block; font-size: 24px; text-align: center; padding-bottom: 35px;}

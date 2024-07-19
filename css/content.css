@@ -207,7 +207,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .page_info1 .section2 .txt_con .list_item li:first-of-type {margin-top: 0;}
 .page_info1 .section2 .txt_con .list_item li:last-of-type span {letter-spacing: -1.6px;}
 .page_info1 .section2 .txt_con .list_item i {font-size: 20px; font-weight: 500; color: #000; font-family: var(--point-font1); flex: 0 0 100px; text-align: center; line-height: 38px; padding: 4px 0; border-radius: 8px; box-shadow: 0px 0px 12px 0px rgba(221, 54, 98, 0.20); border: 1px solid transparent; background-image: linear-gradient(#fff, #fff), linear-gradient(135deg, #E64C88 0%, #3734C3 100%); background-origin: border-box; background-clip: padding-box, border-box;}
-.page_info1 .section2 .txt_con .list_item span {font-size: 20px; font-weight: 300; color: #000; font-family: var(--point-font1); flex: 1; line-height: 40px; padding: 8px 0;}
+.page_info1 .section2 .txt_con .list_item span {font-size: 20px; font-weight: 300; color: #000; font-family: var(--point-font1); flex: 1; line-height: 28px; padding: 8px 0;}
 .page_info1 .section2 .txt_con .list_item span br {display: none;}
 .page_info1 .section2 .program_con {padding-top: 0;}
 .page_info1 .section2 .program_con h5 {padding-bottom: 12px; font-size: 24px; font-weight: 500; color: #000; font-family: var(--point-font1);}
@@ -222,7 +222,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 
 
 .page_info1 .section2 .program_con .list_program a .box {display: flex; align-items: center; position: absolute; left: 40px; top: 50%; transform: translateY(-50%); width: calc(100% - 80px); gap: 0 16px;}
-.page_info1 .section2 .program_con .list_program a .box .img_area {flex: 0 0 263px;}
+.page_info1 .section2 .program_con .list_program a .box .img_area {flex: 0 0 200px;}
 .page_info1 .section2 .program_con .list_program a .box span {font-size: 24px; font-weight: 500; color: #fff; font-family: var(--point-font1);}
 
 
@@ -483,7 +483,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     .page_info1 .section2 .txt_con .list_item span {flex: auto; font-size: 16px; line-height: 1.5; letter-spacing: -0.64px;}
     .page_info1 .section2 .txt_con .list_item span br {display: block;}
     .page_info1 .section2 .txt_con .list_item span:last-of-type {letter-spacing: -1.28px;}
-    .page_info1 .section2 .txt_con .list_item li:last-of-type span {font-size: 14px;}
+    /* .page_info1 .section2 .txt_con .list_item li:last-of-type span {font-size: 16px;} */
     .page_info1 .section2 .program_con h5 {font-size: 24px;}
     .page_info1 .section2 .program_con .list_program a {aspect-ratio: 340 / 60;}
     /* .page_info1 .section2 .program_con .list_program a .txt {left: 20px; transform: translateY(-50%) scale(0.66); transform-origin: left;} */
