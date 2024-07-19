@@ -196,13 +196,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 animateElement(menuWrapper, 'fadeOut', () => {
                     menuWrapper.style.display = 'none';
                     menuWrapper.classList.remove('on');
-                }, 400);
+                }, 200);
             } else {
                 menuWrapper.style.display = 'block';
                 document.querySelector('.btn_m').classList.add('on');
                 animateElement(menuWrapper, 'fadeIn', () => {
                     menuWrapper.classList.add('on');
-                }, 400);
+                }, 200);
             }
         }
     });
