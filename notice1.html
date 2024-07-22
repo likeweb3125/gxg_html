@@ -17,10 +17,11 @@
 <meta property="og:image:height" content="" />
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 <meta name="format-detection" content="telephone=no" />
-<link rel="stylesheet" href="css/default.css?ver=2" />
-<link href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="js/main.js?ver=2"></script>
+<link rel="stylesheet" href="css/default.css?ver=4" />
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/main.js?ver=4"></script>
+<script type="text/javascript" src="link_url.js?ver=4"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DJNRYZG1S"></script>
 <script>
@@ -33,124 +34,296 @@
 </head>
 <body class="body_user">
 <div id="wrap">
+
+    <header id="header" class="header">
+        <div class="header_inner">
+            <div class="header_con">
+                <h1 class="logo">
+                    <a href="javascript: shome();">
+                        <img src="images/logo.svg" alt="GXG">
+                    </a>
+                </h1>
+                <nav class="gnb_wrap">
+                    <ul class="gnb">
+                        <li>
+                            <a href="javascript: menu1();">
+                                <span>GXG 2024</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu11();">GXG 2024</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu12();">오시는 길</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu13();">행사장 구성</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: menu2();">
+                                <span>프로그램</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu21();">SCHEDULE</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu22();">THE STAGE</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu23();">THE ART</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu24();">THE PLAY</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu25();">THE FESTA</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: menu3();">
+                                <span>커뮤니티</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu31();">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu32();">자주 묻는 질문</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="sns_wrap">
+                <li>
+                    <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
+                </li>
+            </ul>
+            <button type="button" class="btn_m">
+                <span>모바일메뉴</span>
+            </button>
+            <div class="m_gnb_wrap">
+                <div class="dimm"></div>
+                <ul class="m_gnb">
+                    <li>
+                        <a href="javascript: menu1();">
+                            <span>GXG 2024</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu11();">GXG 2024</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu12();">오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu13();">행사장 구성</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: menu2();">
+                            <span>프로그램</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu21();">SCHEDULE</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu22();">THE STAGE</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu23();">THE ART</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu24();">THE PLAY</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu25();">THE FESTA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: menu3();">
+                            <span>커뮤니티</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu31();">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu32();">자주 묻는 질문</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bottom_box">
+                    <h2 class="gnb_logo">
+                        <img src="images/logo.svg" alt="GXG">
+                    </h2>
+                    <ul class="sns_wrap">
+                        <li>
+                            <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
     <!-- main -->
     <main id="main">
         <div class="content_wrap">
             <div class="sub_content">
-                <secttion class="section section1">
-                    <div class="section_inner">
-                        <div class="sub_tit">
-                            <h2>커뮤니티</h2>
-                            <span>GXG 2024에 관한 정보를 확인하세요.</span>
-                            <a href="/" class="link">GXG 2024</a>
-                        </div>
-                        <div class="user_baord">
-                            <ul class="tab_style1">
-                                <li>
-                                    <a href="faq1.html">자주 묻는 질문</a>
-                                </li>
-                                <li class="on">
-                                    <a href="notice1.html">공지사항</a>
-                                </li>
-                            </ul>
-                            <div class="board_area">
-                                <div class="board_table">
-                                    <table>
-                                        <colgroup>
-                                            <col style="width: 10%;" class="date_col">
-                                            <col class="con_col">
-                                            <col style="width: 13%;" class="name_col">
-                                        </colgroup>
-                                        <tbody>
-                                            <tr>
-                                                <td class="date_td">
-                                                    <div class="date_tdbox">
-                                                        <em>2024.06</em>
-                                                        <b>07</b>
-                                                    </div>
-                                                </td>
-                                                <td class="con_td">
-                                                    <div class="con_tdbox">
-                                                        <strong>공지</strong>
-                                                        <span>
-                                                            <a href="notice_view1.html">GXG 2024, COMING SOON!</a>
-                                                        </span>
-                                                    </div>              
-                                                </td>
-                                                <td class="name_td">GXG 운영사무국</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="date_td">
-                                                    <div class="date_tdbox">
-                                                        <em>2024.06</em>
-                                                        <b>07</b>
-                                                    </div>
-                                                </td>
-                                                <td class="con_td">
-                                                    <div class="con_tdbox">
-                                                        <strong>공지</strong>
-                                                        <span>
-                                                            <a href="notice_view2.html">GXG 2024 게임음악 경연대회 : The 1st GXG SOUND TRACK 개최</a>
-                                                        </span>
-                                                    </div>              
-                                                </td>
-                                                <td class="name_td">GXG 운영사무국</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="date_td">
-                                                    <div class="date_tdbox">
-                                                        <em>2024.06</em>
-                                                        <b>10</b>
-                                                    </div>
-                                                </td>
-                                                <td class="con_td">
-                                                    <div class="con_tdbox">
-                                                        <span>
-                                                            <a href="notice_view4.html">[보도자료] 2회차 맞은 게임문화축제 GXG 2024, 신규 프로그램 ‘GXG 2024 게임음악 경연대회’ 참가자 모집</a>
-                                                        </span>
-                                                    </div>              
-                                                </td>
-                                                <td class="name_td">GXG 운영사무국</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="date_td">
-                                                    <div class="date_tdbox">
-                                                        <em>2024.06</em>
-                                                        <b>07</b>
-                                                    </div>
-                                                </td>
-                                                <td class="con_td">
-                                                    <div class="con_tdbox">
-                                                        <span>
-                                                            <a href="notice_view3.html">GXG 2024 공식 SNS 채널 안내</a>
-                                                        </span>
-                                                    </div>              
-                                                </td>
-                                                <td class="name_td">GXG 운영사무국</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                <div class="sub_visual">
+                    <img src="images/sub_visual1.png" alt="image">
+                    <div class="txt_visual">
+                        <span>게임, 문화로 즐기다!</span>
+                        <img src="images/img_gxg.svg" alt="GXG">
+                    </div>
+                </div>
+                <div class="section_wrap grey_section">
+                    <section class="section section1">
+                        <div class="section_inner">
+                            <div class="sub_title">
+                                <h4>
+                                    <em>NOTICE</em>
+                                    <strong>공지사항</strong>
+                                </h4>
+                            </div>
+                            <div class="user_baord">
+                                <div class="board_area">
+                                    <div class="board_table">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 10%;" class="date_col">
+                                                <col class="con_col">
+                                                <col style="width: 13%;" class="name_col">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="date_td">
+                                                        <div class="date_tdbox">
+                                                            <em>2024.06</em>
+                                                            <b>07</b>
+                                                        </div>
+                                                    </td>
+                                                    <td class="con_td">
+                                                        <div class="con_tdbox">
+                                                            <strong>공지</strong>
+                                                            <span>
+                                                                <a href="notice_view1.html">GXG 2024, COMING SOON!</a>
+                                                            </span>
+                                                        </div>              
+                                                    </td>
+                                                    <td class="name_td">GXG 운영사무국</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date_td">
+                                                        <div class="date_tdbox">
+                                                            <em>2024.07</em>
+                                                            <b>22</b>
+                                                        </div>
+                                                    </td>
+                                                    <td class="con_td">
+                                                        <div class="con_tdbox">
+                                                            <span>
+                                                                <a href="notice_view5.html">GXG 2024 게임음악 경연대회 : The 1st GXG SOUND TRACK 참가 신청 마감</a>
+                                                            </span>
+                                                        </div>              
+                                                    </td>
+                                                    <td class="name_td">GXG 운영사무국</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date_td">
+                                                        <div class="date_tdbox">
+                                                            <em>2024.06</em>
+                                                            <b>10</b>
+                                                        </div>
+                                                    </td>
+                                                    <td class="con_td">
+                                                        <div class="con_tdbox">
+                                                            <span>
+                                                                <a href="notice_view4.html">[보도자료] 2회차 맞은 게임문화축제 GXG 2024, 신규 프로그램 ‘GXG 2024 게임음악 경연대회’ 참가자 모집</a>
+                                                            </span>
+                                                        </div>              
+                                                    </td>
+                                                    <td class="name_td">GXG 운영사무국</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date_td">
+                                                        <div class="date_tdbox">
+                                                            <em>2024.06</em>
+                                                            <b>07</b>
+                                                        </div>
+                                                    </td>
+                                                    <td class="con_td">
+                                                        <div class="con_tdbox">
+                                                            <span>
+                                                                <a href="notice_view3.html">GXG 2024 공식 SNS 채널 안내</a>
+                                                            </span>
+                                                        </div>              
+                                                    </td>
+                                                    <td class="name_td">GXG 운영사무국</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="date_td">
+                                                        <div class="date_tdbox">
+                                                            <em>2024.06</em>
+                                                            <b>07</b>
+                                                        </div>
+                                                    </td>
+                                                    <td class="con_td">
+                                                        <div class="con_tdbox">
+                                                            <span>
+                                                                <a href="notice_view2.html">GXG 2024 게임음악 경연대회 : The 1st GXG SOUND TRACK 개최</a>
+                                                            </span>
+                                                        </div>              
+                                                    </td>
+                                                    <td class="name_td">GXG 운영사무국</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- <div class="paging">
+                                        <a href="#" class="btn_first btn_paging">처음</a>
+                                        <a href="#" class="btn_prev btn_paging">이전</a>
+                                        <strong>1</strong>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a> 
+                                        <a href="#">6</a> 
+                                        <a href="#">7</a> 
+                                        <a href="#">8</a> 
+                                        <a href="#">9</a> 
+                                        <a href="#">10</a> 
+                                        <a href="#" class="btn_next btn_paging">다음</a>
+                                        <a href="#" class="btn_last btn_paging">끝</a>
+                                    </div> -->
                                 </div>
-                                <!-- <div class="paging">
-                                    <a href="#" class="btn_first btn_paging">처음</a>
-                                    <a href="#" class="btn_prev btn_paging">이전</a>
-                                    <strong>1</strong>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a> 
-                                    <a href="#">6</a> 
-                                    <a href="#">7</a> 
-                                    <a href="#">8</a> 
-                                    <a href="#">9</a> 
-                                    <a href="#">10</a> 
-                                    <a href="#" class="btn_next btn_paging">다음</a>
-                                    <a href="#" class="btn_last btn_paging">끝</a>
-                                </div> -->
                             </div>
                         </div>
-                    </div>
-                </secttion>
+                    </section>
+                </div>
             </div>
         </div>
     </main>
@@ -161,6 +334,7 @@
 
     <!-- footer -->
     <footer id="footer">
+        <button type="button" class="btn_top">TOP</button>
         <div class="bottom_footer">
             <div class="footer_inner">
                 <div class="footer_area">

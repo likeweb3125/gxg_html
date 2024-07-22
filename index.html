@@ -17,10 +17,11 @@
 <meta property="og:image:height" content="" />
 <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 <meta name="format-detection" content="telephone=no" />
-<link rel="stylesheet" href="css/default.css?ver=2" />
-<link href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="js/main.js?ver=2"></script>
+<link rel="stylesheet" href="css/default.css?ver=4" />
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="js/main.js?ver=4"></script>
+<script type="text/javascript" src="link_url.js?ver=4"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DJNRYZG1S"></script>
 <script>
@@ -34,10 +35,27 @@
 <body class="body_user">
 <div id="wrap">
 
+
     <div class="pop_main" style="display: none;">
         <div class="dimm"></div>
         <div class="pop_area">
             <div class="pop_inner">
+                <!-- <div class="top_txt">
+                    <span>
+                        <img src="images/pop_gxg1.svg" alt="GXG">
+                        게임음악 경연대회
+                    </span>
+                    <span>
+                        <img src="images/gxg_sound_txt.png" alt="THE 1st GXG SOUND TRACK">
+                    </span>
+                    <strong>참가접수가 종료 되었습니다.</strong>
+                </div>
+                <div class="txt_box">
+                    <p>본선에 진출할 6팀에게는 8월 중 개별 연락 드릴 예정이며, <br>경연 결과는 추후 홈페이지를 통해 확인하실 수 있습니다.</p>
+                    <p>본선 진출자(팀)는 <strong>9월 6일(금)부터 9월 7일(토)</strong>까지 열리는 <br>GXG 2024에서 <b>본선 공연 및 갈라 콘서트</b>에 참여하게 됩니다.</p>
+                    <span>여러분의 많은 관심과 기대 부탁드립니다. <i>감사합니다.</i></span>
+                    <img src="images/pop_gxg2.svg" alt="GXG">
+                </div> -->
                 <img src="images/popup_img.png" alt="image" style="width: 100%;">
             </div>
             <div class="btn_pop_wrap">
@@ -48,101 +66,687 @@
     </div>
 
 
+
+    <header id="header" class="header">
+        <div class="header_inner">
+            <div class="header_con">
+                <h1 class="logo">
+                    <a href="javascript: shome();">
+                        <img src="images/logo.svg" alt="GXG">
+                    </a>
+                </h1>
+                <nav class="gnb_wrap">
+                    <ul class="gnb">
+                        <li>
+                            <a href="javascript: menu1();">
+                                <span>GXG 2024</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu11();">GXG 2024</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu12();">오시는 길</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu13();">행사장 구성</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: menu2();">
+                                <span>프로그램</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu21();">SCHEDULE</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu22();">THE STAGE</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu23();">THE ART</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu24();">THE PLAY</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu25();">THE FESTA</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: menu3();">
+                                <span>커뮤니티</span>
+                            </a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="javascript: menu31();">공지사항</a>
+                                </li>
+                                <li>
+                                    <a href="javascript: menu32();">자주 묻는 질문</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="sns_wrap">
+                <li>
+                    <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
+                </li>
+            </ul>
+            <button type="button" class="btn_m">
+                <span>모바일메뉴</span>
+            </button>
+            <div class="m_gnb_wrap">
+                <div class="dimm"></div>
+                <ul class="m_gnb">
+                    <li>
+                        <a href="javascript: menu1();">
+                            <span>GXG 2024</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu11();">GXG 2024</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu12();">오시는 길</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu13();">행사장 구성</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: menu2();">
+                            <span>프로그램</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu21();">SCHEDULE</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu22();">THE STAGE</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu23();">THE ART</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu24();">THE PLAY</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu25();">THE FESTA</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: menu3();">
+                            <span>커뮤니티</span>
+                        </a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="javascript: menu31();">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript: menu32();">자주 묻는 질문</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="bottom_box">
+                    <h2 class="gnb_logo">
+                        <img src="images/logo.svg" alt="GXG">
+                    </h2>
+                    <ul class="sns_wrap">
+                        <li>
+                            <a href="https://www.instagram.com/gxg_gameculture/" target="_blank" class="btn_insta">인스타그램</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/people/GXG_gameculture/100094975943247/" target="_blank" class="btn_fb">페이스북</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@GXG_gameculture" target="_blank" class="btn_ytb">유튜브</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <!-- main -->
     <main id="main">
         <div class="content_wrap">
             <div class="main_content">
-                <secttion class="section section0">
+                <section class="section section1">
+                    <div class="section_con">
+                        <div class="txt_box_wrap">
+                            <div class="txt_box">
+                                <div class="txt"><b>게임,</b><i>문화</i>로 즐기다</div>
+                                <div class="time_txt">
+                                    <div class="time_txt_inner">
+                                        <div class="top_box">
+                                            <strong>2024.09.06 ~ 2024.09.07</strong>
+                                            <strong>2days</strong>
+                                        </div>
+                                        <span id="countdown"></span>
+                                    </div>
+                                    <script>
+                                        const today = new Date();
+                                        const targetDate = new Date('2024-09-06');
+                                    
+                                        const difference = targetDate.getTime() - today.getTime();
+                                        const daysRemaining = Math.ceil(difference / (1000 * 3600 * 24));
+                                        const prefix = daysRemaining >= 0 ? 'D-' : 'D+';
+                                    
+                                        document.getElementById('countdown').textContent = `${prefix}${Math.abs(daysRemaining)}`;
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video">
+                            <video src="images/video.mp4?ver=3" muted autoplay loop playsinline></video>
+                        </div>
+                    </div>
+                </section>
+                <section class="section section2">
+                    <div class="tit_txt">
+                        <h2>GXG 2024에서 <br><b>게임 문화 축제</b>를 <br>즐기세요!</h2>
+                    </div>
+                    <div class="slider_wrap">
+                        <div class="slider1">
+                            <div class="section2_slider1_wrap">
+                                <div class="swiper section2_slider1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="pc_img">
+                                                <img src="images/section2_slide1_1.png" alt="image">
+                                            </div>
+                                            <div class="m_con">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_1_1.png" alt="image">
+                                                        <span>게임OST 국악 콘서트</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_1_2.png" alt="image">
+                                                        <span>GXG 2024 개막식</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_1_3.png" alt="image">
+                                                        <span>게임음악 경연대회</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="pc_img">
+                                                <img src="images/section2_slide1_2.png" alt="image">
+                                            </div>
+                                            <div class="m_con">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_2_1.png" alt="image">
+                                                        <span>게임문화전시</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_2_2.png" alt="image">
+                                                        <span>사회공헌전시</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_2_3.png" alt="image">
+                                                        <span>테라시아 특별전</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="pc_img">
+                                                <img src="images/section2_slide1_3.png" alt="image">
+                                            </div>
+                                            <div class="m_con">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_3_1.png" alt="image">
+                                                        <span>브랜드 체험존</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_3_2.png" alt="image">
+                                                        <span>GXG 마켓</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_3_3.png" alt="image">
+                                                        <span>GXG 버스킹 라운지</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="pc_img">
+                                                <img src="images/section2_slide1_4.png" alt="image">
+                                            </div>
+                                            <div class="m_con">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_4_1.png" alt="image">
+                                                        <span>GXG x 인디크래프트</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_4_2.png" alt="image">
+                                                        <span>GXG x WCG</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="images/m_section2_slide1_4_3.png" alt="image">
+                                                        <span>GXG x 일러스타 페스</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider2">
+                            <div class="txt_wrap">
+                                <em>
+                                    <img src="images/txt_the.png" alt="THE">
+                                </em>
+                                <div class="rolling_txt">
+                                    <div class="item_txt">
+                                        <span>
+                                            <img src="images/txt_start.png" alt="START">
+                                        </span>
+                                    </div>
+                                    <div class="item_txt">
+                                        <span>
+                                            <img src="images/txt_art.png" alt="ART">
+                                        </span>
+                                    </div>
+                                    <div class="item_txt">
+                                        <span>
+                                            <img src="images/txt_play.png" alt="PLAY">
+                                        </span>
+                                    </div>
+                                    <div class="item_txt">
+                                        <span>
+                                            <img src="images/txt_festa.png" alt="START">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section2_slider2_wrap">
+                                <div class="swiper section2_slider2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/section2_slide2_1.png" alt="image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/section2_slide2_2.png" alt="image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/section2_slide2_3.png" alt="image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/section2_slide2_4.png" alt="image">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                            <div class="slide_util">
+                                <div class="swiper-button-prev btn_arrow">이전</div>
+                                <div class="swiper-button-next btn_arrow">다음</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_section">
+                        <ul class="list_section2">
+                            <li>
+                                <div class="img">
+                                    <img src="images/m_section2_slide1.png" alt="THE STAGE">
+                                </div>
+                                <ul class="list_item">
+                                    <li>
+                                        <img src="images/m_section2_slide1_1_1.png" alt="image">
+                                        <span>게임OST 국악 콘서트</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_1_2.png" alt="image">
+                                        <span>GXG 2024 개막식</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_1_3.png" alt="image">
+                                        <span>게임음악 경연대회</span>
+                                    </li>
+                                </ul>
+                                <!-- <div class="m_slider">
+                                    <div class="swiper m_section2_slider1">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_1_1.png" alt="image">
+                                                <span>게임OST 국악 콘서트</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_1_2.png" alt="image">
+                                                <span>GXG 2024 개막식</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_1_3.png" alt="image">
+                                                <span>게임음악 경연대회</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div> -->
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="images/m_section2_slide2.png" alt="THE ART">
+                                </div>
+                                <ul class="list_item">
+                                    <li>
+                                        <img src="images/m_section2_slide1_2_1.png" alt="image">
+                                        <span>게임문화전시</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_2_2.png" alt="image">
+                                        <span>사회공헌전시</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_2_3.png" alt="image">
+                                        <span>테라시아 특별전</span>
+                                    </li>
+                                </ul>
+                                <!-- <div class="m_slider">
+                                    <div class="swiper m_section2_slider2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_2_1.png" alt="image">
+                                                <span>게임문화전시</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_2_2.png" alt="image">
+                                                <span>사회공헌전시</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_2_3.png" alt="image">
+                                                <span>테라시아 특별전</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div> -->
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="images/m_section2_slide3.png" alt="THE PLAY">
+                                </div>
+                                <ul class="list_item">
+                                    <li>
+                                        <img src="images/m_section2_slide1_3_1.png" alt="image">
+                                        <span>브랜드 체험존</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_3_2.png" alt="image">
+                                        <span>GXG 마켓</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_3_3.png" alt="image">
+                                        <span>GXG 버스킹 라운지</span>
+                                    </li>
+                                </ul>
+                                <!-- <div class="m_slider">
+                                    <div class="swiper m_section2_slider3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_3_1.png" alt="image">
+                                                <span>브랜드 체험존</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_3_2.png" alt="image">
+                                                <span>GXG 마켓</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_3_3.png" alt="image">
+                                                <span>GXG 버스킹 라운지</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div> -->
+                            </li>
+                            <li>
+                                <div class="img">
+                                    <img src="images/m_section2_slide4.png" alt="THE PLAY">
+                                </div>
+                                <ul class="list_item">
+                                    <li>
+                                        <img src="images/m_section2_slide1_4_1.png" alt="image">
+                                        <span>GXG x 인디크래프트</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_4_2.png" alt="image">
+                                        <span>GXG x WCG</span>
+                                    </li>
+                                    <li>
+                                        <img src="images/m_section2_slide1_4_3.png" alt="image">
+                                        <span>GXG x 일러스타 페스</span>
+                                    </li>
+                                </ul>
+                                <!-- <div class="m_slider">
+                                    <div class="swiper m_section2_slider4">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_4_1.png" alt="image">
+                                                <span>GXG x 인디크래프트</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_4_2.png" alt="image">
+                                                <span>GXG x WCG</span>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="images/m_section2_slide1_4_3.png" alt="image">
+                                                <span>GXG x 일러스타 페스</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div> -->
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="section section3">
                     <div class="section_inner">
-                        <div class="section_con">
-                            <div class="logo_wrap">
-                                <strong>
-                                    게임, 문화로 즐기다!
-                                </strong>
-                                <h1 class="logo">
-                                    <img src="images/logo.svg" alt="GXG">
-                                </h1>
-                                <div class="txt">
-                                    <b>9월 6일(금), 7일(토) <i>2일간</i></b>
-                                    <span>판교역 광장 일대</span>
+                        <!-- <h2>
+                            <span>
+                                <i><img src="images/logo_gxg.png" alt="GXG"> 를 통해</i>
+                            </span>
+                            <span>
+                                <i>&lt; 게임 &gt; 을 사랑하는 <br><b>여러분</b> 을 초대합니다.</i>
+                            </span>
+                        </h2> -->
+                        <div class="logo_section">
+                            <div class="top_box">
+                                <div class="box box1">
+                                    <div class="box_mask">
+                                        <div class="box_item">
+                                            <div class="box_item_inner">
+                                                <b>주 최</b>
+                                                <div class="logo_box">
+                                                    <div class="img">
+                                                        <img src="images/logo1_1.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box_mask">
+                                        <div class="box_item">
+                                            <div class="box_item_inner">
+                                                <b>주 관</b>
+                                                <div class="logo_box">
+                                                    <div class="img">
+                                                        <img src="images/logo2_1.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo2_2.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box2">
+                                    <div class="box_mask">
+                                        <div class="box_item">
+                                            <div class="box_item_inner">
+                                                <b>후 원</b>
+                                                <div class="logo_box">
+                                                    <div class="img">
+                                                        <img src="images/logo3_1.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_2.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_3.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_4.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                                <div class="logo_box">
+                                                    <div class="img">
+                                                        <img src="images/logo3_7.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_8.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_9.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_10.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo3_11.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box2 box2_1">
+                                    <div class="box_mask">
+                                        <div class="box_item">
+                                            <div class="box_item_inner">
+                                                <b>콜라보레이션</b>
+                                                <div class="logo_box">
+                                                    <div class="img">
+                                                        <img src="images/logo6_1.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo6_2.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo6_3.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box2">
+                                    <div class="box_mask">
+                                        <div class="box_item">
+                                            <div class="box_item_inner">
+                                                <b>협찬사</b>
+                                                <div class="logo_box">
+                                                    <div class="img">
+                                                        <img src="images/logo4_1.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo4_2.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo4_3.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo4_4.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo4_5.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo4_6.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo4_7.png" alt="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box2" id="timeDisplay" style="display: none;">
+                                    <div class="box_mask">
+                                        <div class="box_item">
+                                            <div class="box_item_inner">
+                                                <b>참가사</b>
+                                                <div class="logo_box">
+                                                    <!-- <div class="img">
+                                                        <img src="images/logo5_1.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_2.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_3.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_4.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_5.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_6.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_7.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_8.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_9.png" alt="logo">
+                                                    </div>
+                                                    <div class="img">
+                                                        <img src="images/logo5_10.png" alt="logo">
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="video_wrap">
-                                <div class="video video_playing">
-                                    <video src="images/video.mp4" muted autoplay loop playsinline></video>
-                                    <button type="button" class="btn_video_play">비디오재생/일시정지</button>
-                                </div>
-                            </div>
+                            <script>
+                                const _today = new Date();
+                                const _targetDate = new Date('2024-07-23');
+                                if (_today >= _targetDate) {
+                                    document.getElementById('timeDisplay').style.display = 'block';
+                                }
+                            </script>
                         </div>
                     </div>
-                    <div class="banner">
-                        <strong>
-                            <b>The 1st GXG SOUND TRACK <br>참가 접수</b>
-                        </strong>
-                    </div>
-                </secttion>
-                <div class="section_wrap">
-                    <secttion class="section section1">
-                        <div class="section_inner">
-                            <div class="section_con">
-                                <h2 class="center_logo">
-                                    <img src="images/logo_w.svg" alt="gxg">
-                                </h2>
-                                <div class="tit">
-                                    <div class="img">
-                                        <div class="pc_img">
-                                            <img src="images/event_logo.png" alt="gxg이벤트">
-                                        </div>
-                                        <div class="tb_img">
-                                            <img src="images/event_logo_tb.png" alt="gxg이벤트">
-                                        </div>
-                                        <div class="m_img">
-                                            <img src="images/event_logo_m.svg" alt="gxg이벤트">
-                                        </div>
-                                    </div>
-                                    <div class="btn_box">
-                                        <a href="https://forms.gle/XjDotKqHELpMnwHx6" target="_blank">
-                                            <span class="txt1">
-                                                <em>
-                                                    <i>
-                                                        <img src="images/btn_txt.png" alt="THE 1st GXG SOUNDTRACK">
-                                                    </i>
-                                                </em>
-                                                <em>
-                                                    <i>참가 신청</i>
-                                                </em>
-                                            </span>
-                                            <span class="txt2">
-                                                <em>
-                                                    <i>참가 신청<br>하러 가기</i>
-                                                </em>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="img_box">
-                                    <div class="pc_img">
-                                        <img src="images/event_con.png" alt="image">
-                                    </div>
-                                    <div class="tb_img">
-                                        <img src="images/event_con_tb.png" alt="image">
-                                    </div>
-                                    <div class="m_img">
-                                        <img src="images/event_con_m.png" alt="image">
-                                    </div>
-                                </div>
-                                <div class="btn_wrap">
-                                    <a href="faq1.html" class="btn_style1">
-                                        <span>자주 묻는 질문 / 공지사항</span>
-                                    </a>
-                                    <a href="https://forms.gle/XjDotKqHELpMnwHx6" target="_blank" class="btn_style2">
-                                        <span>The 1st GXG SOUND TRACK 참가 신청</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </secttion>
-                </div>
+                </section>
             </div>
         </div>
     </main>
@@ -153,6 +757,7 @@
 
     <!-- footer -->
     <footer id="footer">
+        <button type="button" class="btn_top">TOP</button>
         <div class="bottom_footer">
             <div class="footer_inner">
                 <div class="footer_area">
