@@ -427,7 +427,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    let dialog = document.getElementById('swipe_dialog');
+    if(dialog) {
+        if(window.innerWidth <= 768) {
+            dialog.showModal();
+            dialog.addEventListener('click', function(event) {
+                dialog.close();
+            });
+        }
 
+    } else {
+        dialog.close();
+    }
 
 
 
