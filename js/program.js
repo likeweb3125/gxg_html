@@ -29,6 +29,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 fadeOut(swipeImg, 100);
             }
         });
+
+        // 클릭 이벤트 리스너 추가
+        swipeBox.addEventListener('click', function() {
+            var swipeImg = swipeBox.querySelector('.swipe_img');
+            if (swipeImg && swipeImg.style.opacity !== '0') {
+                fadeOut(swipeImg, 100);
+            }
+        });
     });
 
     // fadeOut 함수
