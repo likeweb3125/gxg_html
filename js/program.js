@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // 스크롤 이벤트 리스너 추가
         swipeBox.addEventListener('scroll', function() {
             var swipeImg = swipeBox.querySelector('.swipe_img');
-            if (swipeImg) {
+            if (swipeImg && swipeImg.style.opacity !== '0') {
                 fadeOut(swipeImg, 100);
             }
         });
@@ -25,12 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
         // 터치 이동 이벤트 리스너 추가
         swipeBox.addEventListener('touchmove', function() {
             var swipeImg = swipeBox.querySelector('.swipe_img');
-            if (swipeImg) {
+            if (swipeImg && swipeImg.style.opacity !== '0') {
                 fadeOut(swipeImg, 100);
             }
         });
     });
-
 
     // fadeOut 함수
     function fadeOut(element, duration) {
@@ -42,10 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
             opacity -= gap;
             if (opacity <= 0) {
                 opacity = 0;
+                element.style.opacity = opacity;
                 element.style.display = 'none';
-            }
-            element.style.opacity = opacity;
-            if (opacity > 0) {
+            } else {
+                element.style.opacity = opacity;
                 setTimeout(fade, interval);
             }
         }
