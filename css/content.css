@@ -641,17 +641,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     padding: 0;
     border-radius: 40px;
 }
-.program1 dialog button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100px;
-    height: 100px;
-    background-color: #007947;
-    background-color: transparent;
-    text-indent: -9999em;
-    font-size: 0;
-}
+
 
 
 /********************************** 태블릿 **********************************/
@@ -703,6 +693,10 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     /* 행사 스케줄 */
     .program1 .table_pc { display: none; }
     .program1 .table_tablet_mobile { display: block; }
+    .program1 .table_popup { padding: 40px; }
+    .program1 .table_popup .popup_title { display:flex; justify-content:space-between; align-items: center; font-family: var(--point-font1); font-weight: 500; font-size: 24px; line-height: 28px; margin-bottom: 24px;}
+    .program1 .table_popup .popup_title strong {font-weight: 700; }
+    .program1 .table_popup .popup_title button {background: url(../images/ic_close.png) no-repeat; width: 40px; height: 40px; text-indent: -9999em; font-size: 0px;}
 
 
 
@@ -918,8 +912,8 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     .program1 tbody .time span:last-child { margin-left: 5px; }
     .program1 .schedule_item p { font-size: 18px; line-height: 25px; }
 
-    .program1 dialog {
-        border-radius: 20px;
-    }
+    .program1 dialog {border-radius: 20px;}
+    .program1 .table_popup { padding: 8px; }
+    .program1 .table_popup .popup_title { margin-bottom: 8px;}
     
 }
