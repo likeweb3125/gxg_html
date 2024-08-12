@@ -332,19 +332,22 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 
 
 /* 행사 스케줄 */
+.program1 .table_wrapper {
+    margin-bottom: 100px;
+}
+.program1 .table_wrapper:last-child {
+    margin-bottom: 160px;
+}
 .program1 figure {
     margin: 0;
     overflow-x: auto;
-    margin-bottom: 100px;
 }
-.program1 figure:last-child {
-    margin-bottom: 160px;
-}
-.program1 table {
+.program1 .table_pc {
     max-width: 1400px;
-    min-width: 1400px;
+    /* min-width: 1400px; */
     position: relative
 }
+.program1 .table_tablet_mobile { display: none; }
 .program1 table caption {
     position: absolute;
     right: 20px;
@@ -360,7 +363,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .program1 table, 
 .program1 th,
 .program1 td {
-    /* border: 1px solid black; */
+    border-bottom: 1px solid #DDDDDD;
     border-collapse: collapse;
     text-align: center;
     color: #000;
@@ -370,7 +373,8 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .program1 table tbody {
     background-color: #F8F8F8;
 }
-.program1 th::after,
+
+/* .program1 th::after,
 .program1 td::after {
     content: '';
     position: absolute;
@@ -380,13 +384,13 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     height: 1px;
     background-image: linear-gradient(90deg, #DDDDDD, #DDDDDD 75%, transparent 75%, transparent 100%);
     background-size: 10px 1px;
-}
+} */
 .program1 table th {
     padding-bottom: 12px;
     height: 122px;
 }
 .program1 table th img {
-    width: calc(100% - 1px);
+    width: calc(100% - 3px);
     height: calc(100% - 12px);
     object-fit: cover;
     position: absolute;
@@ -406,7 +410,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 }
 .program1 table td[rowspan='6'],
 .program1 table td[rowspan='8'] {
-    padding-top: 280px;
+    padding-top: 240px;
 }
 .program1 table td[rowspan='6'] .content_wrap,
 .program1 table td[rowspan='8'] .content_wrap{
@@ -420,7 +424,7 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    width: calc(100% - 8px);
+    width: calc(100% - 5px);
     height: calc(100% - 12px);
     display: flex;
     flex-direction: column;
@@ -504,6 +508,9 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     color: #E50063;
     margin-top: 4px;
     display: inline-block;
+}
+.program1 .table_1 .schedule_item.thestage strong {
+    font-size: 20px;
 }
 .program1 .schedule_item.thestage strong em {
     color: #666;
@@ -629,11 +636,22 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 .program1 .m_br {
     display: none;
 }
-
-#swipe_dialog { border: 4px solid #ddd; border-radius: 16px; background: #00000099; color: white;text-align: center;width: 280px; box-sizing: border-box; height: 360px;   }
-#swipe_dialog div { height: 100%; font-weight: 500; font-size: 24px; line-height: 39px; display: flex; flex-direction: column; gap: 24px; justify-content: center; align-items: center; }
-#swipe_dialog img { width: 126px; height: 120px; }
-#swipe_dialog form button { position: absolute; left: 0; right: 0; top: 0; bottom: 0; text-indent: -9999em; font-size: 0; }
+.program1 dialog {
+    border: none;
+    padding: 0;
+    border-radius: 40px;
+}
+.program1 dialog button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #007947;
+    background-color: transparent;
+    text-indent: -9999em;
+    font-size: 0;
+}
 
 
 /********************************** 태블릿 **********************************/
@@ -682,7 +700,9 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
 
 
 
-    
+    /* 행사 스케줄 */
+    .program1 .table_pc { display: none; }
+    .program1 .table_tablet_mobile { display: block; }
 
 
 
@@ -889,7 +909,6 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     .program1 .sub_title strong {font-size: 32px;}
 
     .program1 colgroup .time { max-width: 8.7%; }
-    .program1 table { min-width: 1100px; }
     .program1 table th { height: 80px; }
     .program1 table .day { font-size: 20px; line-height: 23px; }
     .program1 table .day p:last-child { font-size: 18px; line-height: 21px; }
@@ -899,8 +918,8 @@ button {background: none; border: none; margin: 0; padding: 0; border-radius: 0;
     .program1 tbody .time span:last-child { margin-left: 5px; }
     .program1 .schedule_item p { font-size: 18px; line-height: 25px; }
 
-    #swipe_dialog {width: 220px; height: 320px; }
-    #swipe_dialog div { font-size: 20px; line-height: 32px; }
-    #swipe_dialog img { width: 96px; height: 92px; }
+    .program1 dialog {
+        border-radius: 20px;
+    }
     
 }
