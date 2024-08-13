@@ -59,18 +59,22 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let tabletMobileTable = document.querySelectorAll(".table_tablet_mobile");
-  tabletMobileTable.forEach(function (table) {
-    table.addEventListener("click", function () {
-      const dialog = this.nextElementSibling;
-      dialog.showModal();
-    });
-  });
 
-  let dialogCloseButton = document.querySelectorAll(".table_popup button");
-  dialogCloseButton.forEach(function (button) {
-    button.addEventListener("click", function () {
-      const dialog = this.closest("dialog");
-      dialog.close();
+  if(window.innerWidth <= 768 ) {
+    tabletMobileTable.forEach(function (table) {
+      table.addEventListener("click", function () {
+        const dialog = this.nextElementSibling;
+        dialog.showModal();
+      });
     });
-  });
+  
+    let dialogCloseButton = document.querySelectorAll(".table_popup button");
+    dialogCloseButton.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const dialog = this.closest("dialog");
+        dialog.close();
+      });
+    });
+
+  }
 });
