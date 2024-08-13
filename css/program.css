@@ -157,7 +157,7 @@
 .program1 .table_1 .schedule_item.thestage:nth-child(2) strong {line-height: 24px;}
 
 .program1 .table_2 .schedule_item.thestage strong {font-size: 18px; line-height: 25px;}
-.program1 .table_2 tr:nth-child(5) .thestage strong {letter-spacing: -2px; font-size: 20px;}
+/* .program1 .table_2 tr:nth-child(5) .thestage strong {letter-spacing: -2px; font-size: 20px;} */
 
 .program1 .schedule_item.thestage::before {background-image: linear-gradient(#fff, #fff), linear-gradient( 180deg, #E50063 0%,#E40072 54.27%, #E4007F 88.96%);}
 .program1 .schedule_item.thestage:hover::before {border: 5px solid transparent; background-image: linear-gradient(#FFF5FA, #FFF5FA),linear-gradient(180deg, #E50063 0%, #E40072 54.27%, #E4007F 88.96%);}
@@ -377,6 +377,8 @@
 /********************************** 모바일 **********************************/
 @media screen and (max-width: 400px){
     /* 행사 스케줄 */
+    .program1 .table_wrapper { margin-bottom: 60px;}
+
     .program1 .sub_title {margin-bottom: 28px;}
     .program1 .sub_title h4 {padding: 20px 0;}
     .program1 .sub_title em {padding-bottom: 10px; font-size: 16px;}
@@ -399,7 +401,7 @@
 
     .page_program .top_img_box{width: calc(100% + 20px); margin-left: -10px;padding: 20px 0 0;border: none;background:#fff;border-radius: 0;}
     .page_program .tab_ul{width: calc(100% + 20px);margin-left: -10px;}
-    .page_program .program_ul>li .cont_box .txt_ul_type1 + .img_box {width: 100%}
+    .page_program .program_ul>li .cont_box .full_width {width: 100%!important;}
     .page_program2 .program_ul>li .img_ul li {width: 100%}
 
 }
