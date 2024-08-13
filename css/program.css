@@ -392,10 +392,10 @@
     .program1 tbody .time span:last-child { margin-left: 5px; }
     .program1 .schedule_item p { font-size: 18px; line-height: 25px; }
 
+    .program1 .table_popup .popup_title { margin-bottom: 8px;}
     .table_popup {border-radius: 20px;}
     .table_popup { padding: 8px; }
-    .program1 .table_popup .popup_title { margin-bottom: 8px;}
-
+    .page_program1 .table_popup { margin: auto 20px;}
 
     .page_program .top_img_box{width: calc(100% + 20px); margin-left: -10px;padding: 20px 0 0;border: none;background:#fff;border-radius: 0;}
     .page_program .tab_ul{width: calc(100% + 20px);margin-left: -10px;}
