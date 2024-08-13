@@ -404,4 +404,7 @@
     .page_program .program_ul>li .cont_box .full_width {width: 100%!important;}
     .page_program2 .program_ul>li .img_ul li {width: 100%}
 
+    .page_program1 .table_box_type1 .txt_li p:last-child::before { content: '('; }
+    .page_program1 .table_box_type1 .txt_li p:last-child::after { content: ')'; }
+
 }
