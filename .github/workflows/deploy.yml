@@ -15,4 +15,4 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.HEOSUYEON_SSH_PRIVATE_KEY }}
           port: 22
-          script: whoami
+          script: ls -al
