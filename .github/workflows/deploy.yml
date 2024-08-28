@@ -13,10 +13,10 @@ jobs:
 
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v4   
+        uses: actions/checkout@v4   
 
       - name: Set up SSH
-      - run: |
+        run: |
           mkdir -p ~/.ssh
           echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
