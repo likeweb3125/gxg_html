@@ -15,6 +15,7 @@
 .txt_ul_type1>li .txt span{font-size: 16px;}
 .txt_ul_type1>li ul.txt{padding-left: 38px;}
 .txt_ul_type1>li .txt li{list-style: disc;}
+.txt_ul_type1 .link{text-decoration: underline;}
 
 /* table_box_type */
 .table_box_type1 .top_tit{margin: 40px auto 8px;}
