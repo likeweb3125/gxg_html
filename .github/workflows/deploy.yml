@@ -1,0 +1,31 @@
+name: Deploy to Production
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    env:
+      SSH_USER: ${{ secrets.SSH_USER }}
+      REPO_PATH: ${{ secrets.REPO_PATH }}
+      SERVER_IP: ${{ secrets.SERVER_IP }}
+
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v4   
+
+      - name: Set up SSH
+      - run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H $SERVER_IP >> ~/.ssh/known_hosts
+      
+      - name: Deploy to server
+        run: |
+          ssh -i ~/.ssh/id_rsa $SSH_USER@$SERVER_IP << 'EOF'
+            cd $REPO_PATH
+            git pull
+          EOF
+      
