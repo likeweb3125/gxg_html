@@ -15,6 +15,5 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.HEOSUYEON_SSH_PRIVATE_KEY }}
         script: |
-            whoami
             cd ${{ secrets.REPO_PATH }}
-            git pull origin main
+            git pull
