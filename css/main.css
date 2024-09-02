@@ -344,8 +344,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
 .main_content .logo_section .box2 .box_item .logo_box.sponsorship {max-width: 1051px;}
 .main_content .logo_section .box2 .box_item .logo_box.participant {max-width: 1054px;}
 
-.main_content .logo_section .box2 .box_item .logo_box.sponsorship .img:nth-child(n+6):nth-child(-n+13),
-.main_content .logo_section .box2 .box_item .logo_box.participant .img:nth-child(n+1):nth-child(-n+5) {width: 150px}
+.main_content .logo_section .box2 .box_item .logo_box.sponsorship .img:nth-child(n+6):nth-child(-n+13)  {width: 150px}
 
 .main_content .logo_section .list_box {padding-top: 40px;}
 .main_content .logo_section .list_box > li {margin-top: 30px; padding-top: 130px; position: relative;}
@@ -640,8 +639,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .logo_box.sponsorship,
     .main_content .logo_box.participant {grid-template-columns: 1fr 1fr 1fr!important;}
 
-    .main_content .logo_section .box2 .box_item .logo_box.sponsorship .img:nth-child(n+6):nth-child(-n+13),
-    .main_content .logo_section .box2 .box_item .logo_box.participant .img:nth-child(n+1):nth-child(-n+5) {width: auto}
+    .main_content .logo_section .box2 .box_item .logo_box.sponsorship .img:nth-child(n+6):nth-child(-n+13) {width: auto}
 
 
     #footer .btn_top {left: auto; right: 20px; transform: translate(0, -50%); font-size: 16px; width: 50px; height: 50px; gap: 4px;}
