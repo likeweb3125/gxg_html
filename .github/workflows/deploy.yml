@@ -19,4 +19,7 @@ jobs:
           
       - name: Deploy to server
         run: |
-          ssh -v -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} && cd ${{ secrets.REPO_PATH }} && git pull origin main
+          ssh -v -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} -e "
+          cd ${{ secrets.REPO_PATH }}
+          git pull origin main
+          "
