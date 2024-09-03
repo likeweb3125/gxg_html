@@ -8,7 +8,17 @@ jobs:
     runs-on: [self-hosted, win]
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.HEOSUYEON_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          
       - name: Deploy to server
         run: |
-          cd ~/
-          ls -al
+          ssh -v -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} << 'EOF'
+            cd ${{ secrets.REPO_PATH }}
+            git pull
+          EOF
