@@ -6,9 +6,7 @@ jobs:
   build:
     name: Build
     runs-on: [self-hosted, win]
-    steps:
-      - uses: actions/checkout@v4
-      
+    steps:      
       - name: Set up SSH
         run: |
           mkdir -Force -Path ~/.ssh
