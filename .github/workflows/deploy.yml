@@ -22,6 +22,8 @@ jobs:
       - name: Deploy to server
         run: |
           $commands = @"
-            cd ${{ secrets.REPO_PATH }}
-            git pull origin main"@
-            ssh -v -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} $commands
+          cd ${{ secrets.REPO_PATH }}
+          git pull origin main
+          "@
+          
+          ssh -v -i ~/.ssh/id_rsa ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} $commands
