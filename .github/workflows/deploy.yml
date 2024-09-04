@@ -11,4 +11,5 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: check os
-        run: echo ${{ matrix.os }}
+        run: |
+          echo "Current OS: $RUNNER_OS"
