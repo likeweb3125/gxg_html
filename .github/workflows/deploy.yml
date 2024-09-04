@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: [self-hosted, win, macOS]
+    runs-on: [self-hosted, win]
     
     steps:
       - name: Check OS
@@ -26,19 +26,7 @@ jobs:
           Set-Acl ~/.ssh/id_rsa $acl
           ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
           
-      - if: ${{ runner.os }} == macOS
-        name: Set up SSH macOS            
-        run: |
-          # SSH 폴더 생성
-          mkdir -p ~/.ssh
-          
-          # SSH 키 저장
-          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
-        
-          # SSH 키 권한 설정 및 known_hosts 추가
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-          
+
       - name: Deploy to server
         run: |
           ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
