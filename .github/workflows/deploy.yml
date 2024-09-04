@@ -5,8 +5,35 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: [self-hosted, win]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [self-hosted, win, mac]
+        
     steps:      
-      - name: Print GitHub Actor
+      - name: Set up SSH
         run: |
-          echo "GitHub Actor:: ${{ github.actor }}"
+          # SSH 폴더 생성
+          if [[ "$RUNNER_OS" == "Windows" ]]; then
+              mkdir -Force -Path ~/.ssh
+            else
+              mkdir -p ~/.ssh
+          fi
+
+          # SSH 키 저장
+          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
+            
+          # SSH 키 권한 설정
+          if [[ "$RUNNER_OS" == "Windows" ]]; then
+            $acl = Get-Acl ~/.ssh/id_rsa
+            $acl.SetAccessRuleProtection($true, $false)
+            Set-Acl ~/.ssh/id_rsa $acl
+          else
+            chmod 600 ~/.ssh/id_rsa
+          fi
+          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy to server
+        run: |
+          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
+
