@@ -15,8 +15,8 @@ jobs:
           $acl = Get-Acl ~/.ssh/id_rsa
           $acl.SetAccessRuleProtection($true, $false)
           Set-Acl ~/.ssh/id_rsa $acl
-          ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
           
       - name: Deploy to server
         run: |
-          ssh ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
+          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
