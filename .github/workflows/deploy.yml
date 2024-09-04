@@ -10,7 +10,7 @@ on:
         required: true
         type: choice
         options:
-        - win
+        - Windows
         - macOS
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
    runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
    steps:
     - name: os check
-      run: echo ${{ github.event.inputs.chosen-os }}
+      run: echo ${{ inputs.chosen-os }}
