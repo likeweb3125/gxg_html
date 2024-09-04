@@ -7,7 +7,7 @@ jobs:
     name: Build
     strategy:
       matrix:
-        os: [ubuntu-latest, some-self-hosted-runner]
+        os: [self-hosted, win]
     runs-on: ${{ matrix.os }}
     steps:
       - name: check os
