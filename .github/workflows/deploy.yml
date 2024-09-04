@@ -7,16 +7,6 @@ jobs:
     name: Build
     runs-on: [self-hosted, win]
     steps:      
-      - name: Set up SSH
+      - name: Print GitHub Actor
         run: |
-          mkdir -Force -Path ~/.ssh
-          echo "${{ secrets.HEOSUYEON_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          # SSH 키의 권한을 제한하는 방법
-          $acl = Get-Acl ~/.ssh/id_rsa
-          $acl.SetAccessRuleProtection($true, $false)
-          Set-Acl ~/.ssh/id_rsa $acl
-          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-          
-      - name: Deploy to server
-        run: |
-          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
+          echo "GitHub Actor: ${{ github.actor }}"
