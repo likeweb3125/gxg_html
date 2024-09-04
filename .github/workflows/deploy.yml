@@ -12,7 +12,7 @@ jobs:
         run: echo ${{ runner.os }}
         
       - name: Set up SSH windows 
-        if: ${{ runner.os }} == 'Windows'
+        if: ${{ runner.os }} == Windows
         run: |
           # SSH 폴더 생성
           mkdir -Force -Path ~/.ssh
@@ -27,7 +27,7 @@ jobs:
           ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
           
       - name: Set up SSH macOS  
-        if: ${{ runner.os }} == 'macOS' 
+        if: ${{ runner.os }} == macOS
         run: |
           # SSH 폴더 생성
           mkdir -p ~/.ssh
