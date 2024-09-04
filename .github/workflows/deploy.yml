@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: Check OS
         run: echo ${{ runner.os }}
-        
-      - name: Set up SSH windows
-        if: ${{ runner.os }} == Windows
+
+      - if: ${{ runner.os }} == Windows
+        name: Set up SSH windows        
         run: |
           # SSH 폴더 생성
           mkdir -Force -Path ~/.ssh
@@ -26,8 +26,8 @@ jobs:
           Set-Acl ~/.ssh/id_rsa $acl
           ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
           
-      - name: Set up SSH macOS    
-        if: ${{ runner.os }} == macOS
+      - if: ${{ runner.os }} == macOS
+        name: Set up SSH macOS            
         run: |
           # SSH 폴더 생성
           mkdir -p ~/.ssh
