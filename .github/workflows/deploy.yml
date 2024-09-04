@@ -1,23 +1,28 @@
 name: Deploy to Production
 
-on: 
-  push:
-    branches:
-      - main 
-  workflow_dispatch:
-    inputs:
-      chosen-os:
-        required: true
-        type: choice
-        options:
-        - Windows
-        - win
-        - macOS
+on: [push]
 
 jobs:
   build:
+    name: Build
     runs-on: [self-hosted, win]
     
     steps:
       - name: Check OS
         run: echo ${{ runner.os }}
+        
+      - name: Set up SSH
+        if: ${{ runner.os }} == Windows
+        run: |
+          mkdir -Force -Path ~/.ssh
+          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
+        
+          # SSH 키의 권한을 제한하는 방법
+          $acl = Get-Acl ~/.ssh/id_rsa
+          $acl.SetAccessRuleProtection($true, $false)
+          Set-Acl ~/.ssh/id_rsa $acl
+          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
+          
+      - name: Deploy to server
+        run: |
+          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
