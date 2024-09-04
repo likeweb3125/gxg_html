@@ -9,4 +9,4 @@ jobs:
     steps:      
       - name: Print GitHub Actor
         run: |
-          echo "GitHub Actor: ${{ github.actor }}"
+          echo "GitHub Actor:: ${{ github.actor }}"
