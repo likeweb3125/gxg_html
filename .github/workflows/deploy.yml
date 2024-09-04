@@ -16,7 +16,7 @@ jobs:
           # SSH 폴더 생성
           if ( $env:RUNNER_OS -eq "Windows" ) {
             mkdir -Force -Path ~/.ssh
-          } else
+          } else {
             mkdir -p ~/.ssh
           }
 
