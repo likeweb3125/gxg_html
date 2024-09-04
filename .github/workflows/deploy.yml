@@ -15,9 +15,7 @@ on:
         - macOS
 
 jobs:
-  build:
-   name: build
-   runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
-   steps:
-    - name: os check
-      run: echo ${{ inputs.chosen-os }}
+  test:
+    runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
+    steps:
+    - run: echo Hello world!
