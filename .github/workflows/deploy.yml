@@ -5,35 +5,10 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [self-hosted, win, mac]
-        
-    steps:      
-      - name: Set up SSH
-        run: |
-          # SSH 폴더 생성
-          if ( $env:RUNNER_OS -eq "Windows" ) {
-            mkdir -Force -Path ~/.ssh
-          } else {
-            mkdir -p ~/.ssh
-          }
-
-          # SSH 키 저장
-          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
-            
-          # SSH 키 권한 설정
-          f ($env:RUNNER_OS -eq "Windows") {
-            $acl = Get-Acl ~/.ssh/id_rsa
-            $acl.SetAccessRuleProtection($true, $false)
-            Set-Acl ~/.ssh/id_rsa $acl
-          } else {
-            chmod 600 ~/.ssh/id_rsa
-          }
-          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-
-      - name: Deploy to server
-        run: |
-          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
-
+        os: [ubuntu-latest, some-self-hosted-runner]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: check os
+        run: echo ${{ matrix.os }}
