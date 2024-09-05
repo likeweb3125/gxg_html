@@ -9,4 +9,4 @@ jobs:
     
     steps:
       - name: Deploy to server
-        run: cd ${{ secrets.REPO_PATH }} && ls -al
+        run: cd ${{ secrets.REPO_PATH }} && git pull origin main
