@@ -5,40 +5,8 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: [self-hosted, win]
+    runs-on: self-hosted
     
     steps:
-      - name: Check OS
-        run: echo ${{ runner.os }}
-        
-      - name: Set up SSH Windows
-        if: ${{ runner.os == 'Windows' }}
-        run: |
-          # SSH 폴더 생성
-          mkdir -Force -Path ~/.ssh
-          
-          # SSH 키 저장
-          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
-        
-          # SSH 키 권한 설정 및 known_hosts 추가
-          $acl = Get-Acl ~/.ssh/id_rsa
-          $acl.SetAccessRuleProtection($true, $false)
-          Set-Acl ~/.ssh/id_rsa $acl
-          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-
-      - name: Set up SSH macOS
-        if: ${{ runner.os == 'macOS' }} 
-        run: |
-          # SSH 폴더 생성
-          mkdir -p ~/.ssh
-          
-          # SSH 키 저장
-          echo "${{ secrets[format('{0}_SSH_PRIVATE_KEY', github.actor)] }}" > ~/.ssh/id_rsa
-        
-          # SSH 키 권한 설정 및 known_hosts 추가
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
-          
       - name: Deploy to server
-        run: |
-          ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} "cd ${{ secrets.REPO_PATH }}; git pull origin main"
+        run: cd ${{ secrets.REPO_PATH }} && ls -al
