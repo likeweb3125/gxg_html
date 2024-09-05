@@ -330,18 +330,21 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
 .main_content .logo_section .box2 .box_item_inner b {display: block; padding-bottom: 40px;}
 
 .main_content .logo_section .box_item .logo_box {flex: 1; display: flex; justify-content: space-between; align-items: center;}
-.main_content .logo_section .box2 .box_item .logo_box { text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px 80px; margin: 40px auto 0;}
+.main_content .logo_section .box2 .box_item .logo_box { text-align: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 60px 80px; margin: 40px auto 0;}
 
 .main_content .logo_section .box2 .box_item .logo_box:first-of-type {margin-top: 0;}
 .main_content .logo_section .box2 .box_item .logo_box:last-of-type {padding-bottom: 20px;}
 .main_content .logo_section .box2 .box_item .logo_box .img {display: flex; justify-content: center; align-items: center;}
-.main_content .logo_section .box2 .box_item .logo_box .img img {width: 145px;}
-.main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(5),
-.main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(6),
-.main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(7)  {width: 200px;}
+/* .main_content .logo_section .box2 .box_item .logo_box .img img {width: 145px;} */
+/* .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(1),
+.main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(2),
+.main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(3)  {width: 200px;} */
 
-.main_content .logo_section .box2 .box_item .logo_box.sponsor {max-width: 840px;}
-.main_content .logo_section .box2 .box_item .logo_box.sponsorship {gap: 40px;}
+.main_content .logo_section .box2 .box_item .logo_box.sponsor {max-width: 880px;}
+.main_content .logo_section .box2 .box_item .logo_box.sponsorship {max-width: 1051px;}
+.main_content .logo_section .box2 .box_item .logo_box.participant {max-width: 1054px;}
+
+.main_content .logo_section .box2 .box_item .logo_box.sponsorship .img:nth-child(n+6):nth-child(-n+13)  {width: 150px}
 
 .main_content .logo_section .list_box {padding-top: 40px;}
 .main_content .logo_section .list_box > li {margin-top: 30px; padding-top: 130px; position: relative;}
@@ -515,9 +518,9 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .logo_section .list_item_box .list_item {grid-template-columns: 1fr 1fr 1fr; gap: 40px 16px;}
     .main_content .logo_section .box_item .logo_box {gap: 60px 55px; justify-content: flex-start;}
 
-    .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(5),
-    .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(6),
-    .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(7)  {width: auto;}
+    .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(1),
+    .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(2),
+    .main_content .logo_section .box2 .box_item .logo_box.sponsor .img:nth-child(3)  {width: auto;}
 
 
 
@@ -616,7 +619,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .logo_section .box_item b {display: block; font-size: 24px; text-align: center; padding-bottom: 35px;}
     .main_content .logo_section .box_item .logo_box {gap: 20px; justify-content: center;}
     .main_content .logo_section .box2 .box_item .logo_box {gap: 24px; grid-template-columns: 1fr 1fr; padding-bottom: 0; margin-top: 24px;}
-    .main_content .logo_section .box2 .box_item .logo_box .img img {width: 120px;}
+
     .main_content .logo_section .list_box {padding-top: 50px;}
     .main_content .logo_section .list_box h3 {font-size: 24px; margin-bottom: 15px;}
     .main_content .logo_section .list_item_box .list_item li {height: 32px;}
@@ -636,6 +639,7 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
     .main_content .logo_box.sponsorship,
     .main_content .logo_box.participant {grid-template-columns: 1fr 1fr 1fr!important;}
 
+    .main_content .logo_section .box2 .box_item .logo_box.sponsorship .img:nth-child(n+6):nth-child(-n+13) {width: auto}
 
 
     #footer .btn_top {left: auto; right: 20px; transform: translate(0, -50%); font-size: 16px; width: 50px; height: 50px; gap: 4px;}
@@ -665,9 +669,15 @@ body.p_size #header .m_gnb_wrap {display: none !important;}
 /********************************** 모바일 **********************************/
 @media screen and (max-width: 400px){
 
+    .main_content .logo_section .box_item .box_item_inner { padding: 38px 16px 40px;}
+
+    
     .main_content .logo_box.sponsor, 
     .main_content .logo_box.sponsorship,
     .main_content .logo_box.participant {grid-template-columns: 1fr 1fr!important;}
+
+    .main_content .logo_section .box_item .logo_box:not(.collaboration) .img img {max-width: 120px!important;}
+    .main_content .logo_section .box_item .logo_box.collaboration .img img {max-width: 160px!important;}
 }
 
 

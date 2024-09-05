@@ -1,0 +1,12 @@
+name: Deploy to Production
+
+on: [push]
+
+jobs:
+  build:
+    name: Build
+    runs-on: self-hosted
+    
+    steps:
+      - name: Deploy to server
+        run: cd ${{ secrets.REPO_PATH }} && git pull origin main
